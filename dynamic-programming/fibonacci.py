@@ -8,9 +8,9 @@ def fibonacci(number: int, memoize: dict = None) -> int:
     if number <= 2:
         return 1
 
-    memoize[number] = fibonacci(number - 2, memoize) + fibonacci(number - 1, memoize)
+    memoize[number] = fibonacci(number - 1, memoize) + fibonacci(number - 2, memoize)
     return memoize[number]
 
 
 if __name__ == '__main__':
-    print(fibonacci(500))
+    print(fibonacci(50))
