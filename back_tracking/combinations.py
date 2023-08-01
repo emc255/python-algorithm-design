@@ -31,7 +31,8 @@ def combine(n: int, k: int) -> list:
 
 def combine_helper(n: int, k: int, start_index: int, temp_combinations: list, result: list):
     if len(temp_combinations) == k:
-        result.append(temp_combinations[:])
+        a = temp_combinations.copy()
+        result.append(a)
         return
 
     for i in range(start_index, n + 1):
