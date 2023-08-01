@@ -1,5 +1,5 @@
 """
-Minimum ASCII Delete Sum for Two Strings
+712. Minimum ASCII Delete Sum for Two Strings
 
 Given two strings s1 and s2, return the lowest ASCII sum of deleted characters to make two strings equal.
 
@@ -22,6 +22,7 @@ If instead we turned both strings into "lee" or "eet", we would get answers of 4
 Constraints:
 1 <= s1.length, s2.length <= 1000
 s1 and s2 consist of lowercase English letters.
+
 """
 
 
@@ -36,7 +37,7 @@ def minimum_delete_sum(s1, s2):
                 dp[i + 1][j + 1] = dp[i][j] + ord(s1[i])
             else:
                 dp[i + 1][j + 1] = max(dp[i][j + 1], dp[i + 1][j])
-                
+
     return total - 2 * dp[-1][-1]
 
 
