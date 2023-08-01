@@ -1,7 +1,4 @@
-import string
-
-
-def can_construct(target_string: string, string_list: list, memoize: dict = None) -> bool:
+def can_construct(target_string: str, string_list: list, memoize: dict = None) -> bool:
     if memoize is None:
         memoize = {}
 
