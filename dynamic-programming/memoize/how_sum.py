@@ -27,3 +27,4 @@ def how_sum(target_sum: int, numbers: list, memoize: dict = None) -> Union[list,
 
 
 print(how_sum(1000, [99, 77]))
+print(how_sum(10, [3, 5]))
