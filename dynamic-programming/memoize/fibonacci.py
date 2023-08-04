@@ -12,5 +12,4 @@ def fibonacci(number: int, memoize: dict = None) -> int:
     return memoize[number]
 
 
-if __name__ == '__main__':
-    print(fibonacci(50))
+print(fibonacci(50))

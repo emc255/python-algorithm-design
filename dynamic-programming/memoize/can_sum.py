@@ -20,6 +20,5 @@ def can_sum(target_sum: int, numbers: list, memoize: dict = None) -> bool:
     return False
 
 
-if __name__ == '__main__':
-    print(can_sum(7, [2, 4]))
-    print(can_sum(300, [7, 14]))
+print(can_sum(7, [2, 4]))
+print(can_sum(300, [7, 14]))

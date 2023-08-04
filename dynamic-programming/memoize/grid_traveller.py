@@ -17,5 +17,4 @@ def grid_traveller(row: int, column: int, memoize: dict = None) -> int:
     return memoize[key]
 
 
-if __name__ == '__main__':
-    print(grid_traveller(18, 18))
+print(grid_traveller(18, 18))
