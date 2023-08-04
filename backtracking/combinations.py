@@ -25,11 +25,11 @@ Constraints:
 
 def combine(n: int, k: int) -> list:
     result = []
-    combine_helper(n, k, 1, [], result)
+    backtracking(n, k, 1, [], result)
     return result
 
 
-def combine_helper(n: int, k: int, start_index: int, temp_combinations: list, result: list):
+def backtracking(n: int, k: int, start_index: int, temp_combinations: list, result: list):
     if len(temp_combinations) == k:
         a = temp_combinations.copy()
         result.append(a)
@@ -37,7 +37,7 @@ def combine_helper(n: int, k: int, start_index: int, temp_combinations: list, re
 
     for i in range(start_index, n + 1):
         temp_combinations.append(i)
-        combine_helper(n, k, i + 1, temp_combinations, result)
+        backtracking(n, k, i + 1, temp_combinations, result)
         temp_combinations.pop()
 
 

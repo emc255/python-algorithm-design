@@ -27,14 +27,14 @@ digits[i] is a digit in the range ['2', '9'].
 
 
 def letter_combinations(digits: str):
-    def backtrack(index, prefix):
+    def backtracking(index, prefix):
         if len(prefix) == len(digits):
             result.append(prefix)
             return
 
         key = digits[index]
         for letter in phone.get(key):
-            backtrack(index + 1, prefix + letter)
+            backtracking(index + 1, prefix + letter)
 
     phone = {
         "2": "abc",
@@ -49,7 +49,7 @@ def letter_combinations(digits: str):
     result = []
 
     if digits:
-        backtrack(0, "")
+        backtracking(0, "")
 
     return result
 

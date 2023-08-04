@@ -37,7 +37,7 @@ All elements of candidates are distinct.
 
 
 def combination_sum(candidates: list[int], target: int) -> list[list[int]]:
-    def backtrack(new_target, combination: list[int]):
+    def backtracking(new_target, combination: list[int]):
         if new_target == 0:
             sorted_list_descending = sorted(combination, reverse=True)
             if sorted_list_descending not in result:
@@ -50,11 +50,11 @@ def combination_sum(candidates: list[int], target: int) -> list[list[int]]:
         for candidate in candidates:
             remainder = new_target - candidate
             combination.append(candidate)
-            backtrack(remainder, combination)
+            backtracking(remainder, combination)
             combination.pop()
 
     result = []
-    backtrack(target, [])
+    backtracking(target, [])
     return result
 
 
