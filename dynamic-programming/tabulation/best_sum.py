@@ -1,9 +1,10 @@
-from typing import Union, Optional
+from typing import Optional
 
 
-def best_sum(target_sum: int, numbers: list) -> Union[list, None]:
+def best_sum(target_sum: int, numbers: list) -> list:
     dp: Optional[list[Optional[list]]] = [None for _ in range(target_sum + 1)]
     dp[0] = []
+
     for i in range(len(dp)):
         for number in numbers:
             if i + number < len(dp) and dp[i] is not None:
