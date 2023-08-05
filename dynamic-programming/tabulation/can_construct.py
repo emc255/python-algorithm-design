@@ -3,10 +3,11 @@ def can_construct(target_string: str, words: list) -> bool:
     dp[0] = True
 
     for i in range(len(dp)):
-        for word in words:
-            new_string = target_string[i:]
-            if new_string.startswith(word) and dp[i] and i + len(word) < len(dp):
-                dp[i + len(word)] = True
+        if dp[i]:
+            for word in words:
+                new_string = target_string[i:]
+                if new_string.startswith(word) and i + len(word) < len(dp):
+                    dp[i + len(word)] = True
 
     return dp[len(target_string)]
 
