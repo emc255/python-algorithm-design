@@ -55,6 +55,7 @@ def search(nums: list, target: int) -> int:
                 left_index = mid_index + 1
             else:
                 right_index = mid_index - 1
+
     return -1
 
 
