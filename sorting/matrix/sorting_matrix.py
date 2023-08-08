@@ -33,16 +33,34 @@ def quicksort(arr):
 
 
 def merge_sort(array: list) -> list:
-    if len(array) < 1:
-        mid = len(array) // 2
-        merge_sort(array[:mid])
-        merge_sort(array[mid + 1:])
+    def merge():
+        result = []
+        left_index = 0
+        right_index = 0
+        while left_index < len(left_array) and right_index < len(right_array):
+            if left_array[left_index] < right_array[right_index]:
+                result.append(left_array[left_index])
+                left_index += 1
+            else:
+                result.append(right_array[right_index])
+                right_index += 1
 
-    i = 0
-    j = 0
-    k = 0
-    
+        result.extend(left_array[left_index:])
+        result.extend(right_array[right_index:])
 
-print(sorting_matrix([[22, 44, 5, 6], [8, 54, 88, 99], [44, 42, 64, 11]]))
+        return result
+
+    if len(array) <= 1:
+        return array
+
+    mid_index = 0 + len(array) // 2
+    left_array = merge_sort(array[:mid_index])
+    right_array = merge_sort(array[mid_index:])
+
+    return merge()
+
+
+print(sorting_matrix([[22, 44, 5, 6], [8, 54, 99], [44, 42, 64, 11]]))
 
 print(quicksort([22, 44, 5, 6]))
+print(merge_sort([44, 42, 64, 11]))
