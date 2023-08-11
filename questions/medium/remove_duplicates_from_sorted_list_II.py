@@ -19,7 +19,7 @@ The list is guaranteed to be sorted in ascending order.
 """
 from typing import Optional
 
-from shared.commons import ListNode
+from shared.commons import ListNode, LinkedList
 
 
 def delete_duplicates(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -41,12 +41,6 @@ def delete_duplicates(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-nodes = ListNode(1)
-nodes.next = ListNode(2)
-nodes.next.next = ListNode(3)
-nodes.next.next.next = ListNode(3)
-nodes.next.next.next.next = ListNode(4)
-nodes.next.next.next.next.next = ListNode(4)
-nodes.next.next.next.next.next.next = ListNode(5)
+nodes = LinkedList([1, 1, 2, 3, 3, 3, 4, 4, 5])
 
-delete_duplicates(nodes).print()
+delete_duplicates(nodes.head).print()
