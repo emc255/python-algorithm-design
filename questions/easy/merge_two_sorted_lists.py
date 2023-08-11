@@ -20,8 +20,28 @@ Example 3:
 Input: list1 = [], list2 = [0]
 Output: [0]
 """
-from shared.commons import LinkedList
+from typing import Optional
 
-numbers = [1, 2, 4]
-nodes = LinkedList(numbers)
-nodes.print()
+from shared.commons import LinkedList, ListNode
+
+
+def merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    dummy = ListNode(0)
+    current = dummy
+    while list1 or list2:
+        if list1 and (not list2 or list1.val <= list2.val):
+            current.next = ListNode(list1.val)
+            list1 = list1.next
+        else:
+            current.next = ListNode(list2.val)
+            list2 = list2.next
+
+        current = current.next
+
+    return dummy.next
+
+
+l1 = LinkedList([1, 2, 4]).head
+l2 = LinkedList([1, 3, 4]).head
+
+print(merge_two_lists(l1, l2).print())
