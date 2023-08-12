@@ -37,6 +37,7 @@ obstacleGrid[i][j] is 0 or 1.
 def unique_paths_with_obstacles(obstacle_grid: list) -> int:
     if obstacle_grid[len(obstacle_grid) - 1][len(obstacle_grid[0]) - 1]:
         return 0
+
     row_length = len(obstacle_grid)
     column_length = len(obstacle_grid[0])
     dp = [[0 for _ in range(row_length)] for _ in range(column_length)]
@@ -58,41 +59,6 @@ def unique_paths_with_obstacles(obstacle_grid: list) -> int:
     return dp[row_length - 1][column_length - 1]
 
 
-def unique_paths_with_obstacles_v2(obstacle_grid: list) -> int:
-    if obstacle_grid[len(obstacle_grid) - 1][len(obstacle_grid[0]) - 1]:
-        return 0
-
-    row_length = len(obstacle_grid)
-    column_length = len(obstacle_grid[0])
-    dp = [[0 for _ in range(row_length + 1)] for _ in range(column_length + 1)]
-    dp[0][0] = 1
-
-    for i in range(row_length + 1):
-        if i + 1 < len(dp) and obstacle_grid[i][0] == 0:
-            dp[i + 1][0] = dp[i][0]
-
-    # for j in range(column_length):
-    #     if obstacle_grid[0][j] == 0:
-    #         dp[0][j] = dp[0][j]
-    print(dp)
-    # for i in range(1, row_length):
-    #     for j in range(1, column_length):
-    #         if obstacle_grid[i][j] == 0:
-    #             dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-
-    return dp[row_length - 1][column_length - 1]
-
-
-"""
-
-[0, 0, 0, 0], 
-[0, 1, 1, 0], 
-[0, 0, 0, 0], 
-[0, 0, 0, 0]
-
-
-"""
-# print(unique_paths_with_obstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]))
-# print(unique_paths_with_obstacles([[0, 1], [0, 0]]))
-# print(unique_paths_with_obstacles([[0, 0], [0, 1]]))
-print(unique_paths_with_obstacles_v2([[0, 0, 0, 0], [0, 1, 1, 0], [0, 0, 0, 0], [0, 0, 0, 0]]))
+print(unique_paths_with_obstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]))
+print(unique_paths_with_obstacles([[0, 1], [0, 0]]))
+print(unique_paths_with_obstacles([[0, 0], [0, 1]]))
