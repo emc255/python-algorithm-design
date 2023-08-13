@@ -32,33 +32,6 @@ Constraints:
 
 """
 
-"""
-4, 4, 4, 5, 6
-1st : 4
-result = [[4]]
-2nd: 4
-result = [[4,4]] return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-
 
 def valid_partition(nums: list) -> bool:
     n = len(nums)
