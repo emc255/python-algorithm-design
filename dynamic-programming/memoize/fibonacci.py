@@ -13,3 +13,4 @@ def fibonacci(number: int, memoize: dict = None) -> int:
 
 
 print(fibonacci(50))
+print(fibonacci(2))
