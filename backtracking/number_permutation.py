@@ -41,4 +41,5 @@ def backtracking(nums: list, result: list, combinations: list):
         combinations.pop()
 
 
+print(permute([1, 2, 3]))
 print(permute([]))
