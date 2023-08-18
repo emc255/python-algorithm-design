@@ -22,41 +22,37 @@ mat[i][j] is either 0 or 1.
 There is at least one 0 in mat.
 
 """
-
-"""
-def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
-        if not mat or not mat[0]:
-            return []
-
-        m = len(mat) 
-        n = len(mat[0])
-        queue = deque()
-        MAX_VALUE = m * n
-        
-        for i in range(m):
-            for j in range(n):
-                if mat[i][j] == 0:
-                    queue.append((i, j))
-                else:
-                    mat[i][j] = MAX_VALUE
-        
-        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        
-        while queue:
-            row, column = queue.popleft()
-            for dr, dc in directions:
-                r = row + dr 
-                c = column + dc
-                if 0 <= r < m and 0 <= c < n and mat[r][c] > mat[row][column] + 1:
-                    queue.append((r, c))
-                    mat[r][c] = mat[row][column] + 1
-        
-        return mat
-"""
+from collections import deque
 
 
 def update_matrix(mat: list) -> list:
+    if not mat or not mat[0]:
+        return []
+
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+    queue = deque()
+    m = len(mat)
+    n = len(mat[0])
+    max_value = m * n
+
+    for r in range(m):
+        for c in range(n):
+            if mat[r][c] == 0:
+                queue.append((r, c))
+            else:
+                mat[r][c] = max_value
+
+    while queue:
+        row, column = queue.popleft()
+        for dr, dc in directions:
+            r = row + dr
+            c = column + dc
+            if 0 <= r < m and 0 <= c < n and mat[r][c] > mat[row][column] + 1:
+                queue.append((r, c))
+                mat[r][c] = mat[row][column] + 1
+
     return mat
 
 
 print(update_matrix([[0, 0, 0], [0, 1, 0], [0, 0, 0]]))
+print(update_matrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]]))
