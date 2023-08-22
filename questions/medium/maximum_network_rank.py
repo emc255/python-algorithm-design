@@ -40,7 +40,22 @@ Each pair of cities has at most one road connecting them.
 
 
 def maximum_network_rank(n: int, roads: list) -> int:
-    return 0
+    connections = [0] * n
+    graph = [[False] * n for _ in range(n)]
+    for a, b in roads:
+        connections[a] += 1
+        connections[b] += 1
+        graph[a][b] = graph[b][a] = True
+
+    max_rank = 0
+    for i in range(n):
+        for j in range(i + 1, n):
+            rank = connections[i] + connections[j]
+            if graph[i][j]:
+                rank -= 1
+            max_rank = max(max_rank, rank)
+
+    return max_rank
 
 
 print(maximum_network_rank(4, [[0, 1], [0, 3], [1, 2], [1, 3]]))
