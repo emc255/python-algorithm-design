@@ -74,6 +74,6 @@ def quick_sort(numbers: list) -> list:
     return quick_sort(left) + mid_array + quick_sort(right)
 
 
-# print(minimize_max([10, 1, 2, 7, 1, 3], 2))
-# print(minimize_max([4, 2, 1, 2], 1))
+print(minimize_max([10, 1, 2, 7, 1, 3], 2))
+print(minimize_max([4, 2, 1, 2], 1))
 print(minimize_max([3, 4, 2, 3, 2, 1, 2], 3))

@@ -43,11 +43,11 @@ Follow up: Could you solve it using only O(s2.length) additional memory space?
 
 def is_interleave(s1: str, s2: str, s3: str) -> bool:
     def dfs(i, j) -> bool:
-        if i == len(s1) and j == len(s2):
-            return True
-        
         if (i, j) in memoize:
             return memoize[(i, j)]
+
+        if i == len(s1) and j == len(s2):
+            return True
 
         if i < len(s1) and s1[i] == s3[i + j] and dfs(i + 1, j):
             return True
@@ -58,12 +58,15 @@ def is_interleave(s1: str, s2: str, s3: str) -> bool:
         memoize[(i, j)] = False
         return memoize[(i, j)]
 
-    memoize = {}
+    if len(s1) + len(s2) != len(s3):
+        return False
 
+    memoize = {}
     return dfs(0, 0)
 
 
 # print(is_interleave("aabcc", "dbbca", "aadbbcbcac"))
-print(is_interleave("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "aaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"))
+# print(is_interleave("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+#                     "aaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+#                     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"))
+print(is_interleave("", "", "a"))

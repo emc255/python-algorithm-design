@@ -1,3 +1,8 @@
-from shared.commons import Tree
+result = [[1], [1, 1]]
 
-Tree([1, 2, 3]).head.print()
+for i in range(1, 5):
+    t = []
+    for j in range(i + 1):
+        t.append(i + 1)
+    result.append(t)
+print(result)
