@@ -1,8 +1,7 @@
-result = [[1], [1, 1]]
-
-for i in range(1, 5):
-    t = []
-    for j in range(i + 1):
-        t.append(i + 1)
-    result.append(t)
+a = "ZY"
+result = 0
+for i in range(len(a)):
+    print((ord(a[i]) - 64))
+    print(25 ** len(a) - i)
+    result += (ord(a[i]) - 64) + (25 ** len(a) - i)
 print(result)
