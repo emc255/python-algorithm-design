@@ -33,3 +33,17 @@ pos is -1 or a valid index in the linked-list.
 Follow up: Can you solve it using O(1) (i.e. constant) memory?
 
 """
+from typing import Optional
+
+from shared.commons import ListNode
+
+
+def has_cycle(head: Optional[ListNode]) -> bool:
+    memo = {}
+    while head:
+        if head in memo:
+            return True
+        else:
+            memo[head] = True
+        head = head.next
+    return False

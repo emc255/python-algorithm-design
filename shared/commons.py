@@ -71,3 +71,22 @@ class Tree:
             return root
 
         return None
+
+
+class Node:
+    def __init__(self, x: int, next_node: 'Node' = None, random: 'Node' = None):
+        self.val = int(x)
+        self.next = next_node
+        self.random = random
+
+    def print(self):
+        current = self
+        while current:
+            print(f'VALUE = {current.val}')
+            if current.random:
+                current_random = current.random
+                print("Random")
+                while current_random:
+                    print(f'\t{current_random.val}')
+                    current_random = current_random.next
+            current = current.next
