@@ -7,22 +7,15 @@
 # print(result)
 
 
-def grid(m: int, n: int):
-    def dp(row, column):
-        if (row, column) in memoize:
-            return memoize[(row, column)]
+arr = [1, 2, 3, 4, 5, 6]
+left = 1
+right = 4
 
-        if row == 1 and column == 1:
-            return 1
-        if row <= 0 or column <= 0:
-            return 0
+for i in range(len(arr)):
+    if i == left:
+        while left < right:
+            arr[left], arr[right] = arr[right], arr[left]
+            left += 1
+            right -= 1
 
-        memoize[(row, column)] = dp(row - 1, column) + dp(row, column - 1)
-        return memoize[(row, column)]
-
-    memoize = {}
-    return dp(m, n)
-
-
-print(grid(3, 2))
-print(grid(1, 1))
+print(arr)
