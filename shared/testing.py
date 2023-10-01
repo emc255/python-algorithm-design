@@ -35,3 +35,20 @@ print(test)
 print(temp_key)
 
 print(map)
+
+
+def find132pattern(nums: list) -> bool:
+    stack = []
+    current_minimum = nums[0]
+    for n in nums[1:]:
+        while stack and n >= stack[-1][0]:
+            stack.pop()
+        if stack and n > stack[-1][1]:
+            return True
+        stack.append([n, current_minimum])
+        current_minimum = min(current_minimum, n)
+    return False
+
+
+print(find132pattern([1, 0, 1, -4, -3]))
+print(find132pattern([3, 5, 0, 3, 4]))
