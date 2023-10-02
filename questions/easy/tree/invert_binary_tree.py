@@ -21,10 +21,40 @@ The number of nodes in the tree is in the range [0, 100].
 -100 <= Node.val <= 100
 
 """
+from collections import deque
 from typing import Optional
 
 from shared.commons import TreeNode
 
 
 def invert_tree(root: Optional[TreeNode]) -> Optional[TreeNode]:
-    pass
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.pop()
+        if node:
+            queue.append(node.left)
+            queue.append(node.right)
+
+            node.left, node.right = node.right, node.left
+    return root
+
+
+def invert_tree_v2(root: Optional[TreeNode]) -> Optional[TreeNode]:
+    if root is not None:
+        root.left, root.right = root.right, root.left
+        invert_tree_v2(root.left)
+        invert_tree_v2(root.right)
+
+    return root
+
+
+head = TreeNode(1)
+head.left = TreeNode(2)
+head.right = TreeNode(3)
+head.left.left = TreeNode(4)
+head.left.right = TreeNode(5)
+head.right.left = TreeNode(6)
+
+invert_tree(head).print()
+invert_tree_v2(head).print()
