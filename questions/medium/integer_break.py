@@ -55,7 +55,33 @@ def integer_break(n: int) -> int:
 
 
 def integer_break_v2(n: int) -> int:
-    pass
+    def dfs(remainder):
+        if remainder in memo:
+            return memo[remainder]
+
+        memo[remainder] = 0 if remainder == n else remainder
+
+        for i in range(1, remainder):
+            value = dfs(i) * dfs(remainder - i)
+            memo[remainder] = max(memo[remainder], value)
+
+        return memo[remainder]
+
+    memo = {1: 1}
+    return dfs(n)
+
+
+def integer_break_v3(n: int) -> int:
+    dp = {1: 1}
+
+    for num in range(2, n + 1):
+        dp[num] = 0 if num == n else num
+        for i in range(1, num):
+            value = dp[i] * dp[num - i]
+            dp[num] = max(dp[num], value)
+    return dp[n]
 
 
 print(integer_break_v2(10))
+
+print(integer_break_v3(44))
