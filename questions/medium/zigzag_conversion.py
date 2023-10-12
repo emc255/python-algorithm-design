@@ -36,6 +36,7 @@ s consists of English letters (lower-case and upper-case), ',' and '.'.
 1 <= numRows <= 1000
 
 """
+from icecream import ic
 
 
 def convert(s: str, num_rows: int) -> str:
@@ -45,6 +46,7 @@ def convert(s: str, num_rows: int) -> str:
     result = ""
     for r in range(num_rows):
         increment = 2 * (num_rows - 1)
+
         for i in range(r, len(s), increment):
             result += s[i]
             middle_increment = i + increment - 2 * r
@@ -53,4 +55,4 @@ def convert(s: str, num_rows: int) -> str:
     return result
 
 
-print(convert("PAYPALISHIRING", 3))
+ic(convert("PAYPALISHIRING", 3))
