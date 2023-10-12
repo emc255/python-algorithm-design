@@ -90,3 +90,14 @@ class Node:
                     print(f'\t{current_random.val}')
                     current_random = current_random.next
             current = current.next
+
+
+class MountainArray:
+    def __init__(self, arr: list):
+        self.arr = arr
+
+    def get(self, index: int) -> int:
+        return self.arr[index]
+
+    def length(self) -> int:
+        return len(self.arr)
