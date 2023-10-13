@@ -1,3 +1,21 @@
+"""
+22. Generate Parentheses
+
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+Example 1:
+Input: n = 3
+Output: ["((()))","(()())","(())()","()(())","()()()"]
+
+Example 2:
+Input: n = 1
+Output: ["()"]
+
+Constraints:
+1 <= n <= 8
+
+"""
+
 from icecream import ic
 
 
@@ -9,7 +27,7 @@ def generate_parenthesis(n: int) -> list:
         if open_parenthesis == close_parenthesis == n:
             result.append("".join(stack))
             return
-        
+
         if open_parenthesis < n:
             stack.append("(")
             backtracking(open_parenthesis + 1, close_parenthesis)
