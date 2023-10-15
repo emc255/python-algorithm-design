@@ -45,15 +45,14 @@ def merge_sort(array: list) -> list:
                 result.append(right_array[right_index])
                 right_index += 1
 
-        result.extend(left_array[left_index:])
-        result.extend(right_array[right_index:])
+        result.extend(left_array[left_index:] + right_array[right_index:])
 
         return result
 
     if len(array) <= 1:
         return array
 
-    mid_index = 0 + len(array) // 2
+    mid_index = len(array) // 2
     left_array = merge_sort(array[:mid_index])
     right_array = merge_sort(array[mid_index:])
 
@@ -63,4 +62,4 @@ def merge_sort(array: list) -> list:
 print(sorting_matrix([[22, 44, 5, 6], [8, 54, 99], [44, 42, 64, 11]]))
 
 print(quicksort([22, 44, 5, 6]))
-print(merge_sort([44, 42, 64, 11]))
+print(merge_sort([44, 42, 64, 11, 66, 15, 5, 26]))
