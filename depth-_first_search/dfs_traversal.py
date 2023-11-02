@@ -1,5 +1,7 @@
 from collections import deque
 
+from icecream import ic
+
 from shared.commons import TreeNode
 
 head = TreeNode(1)
@@ -80,6 +82,6 @@ def postorder_traversal_v2(root: TreeNode) -> list:
 
 
 print("POSTORDER")
-print(postorder_traversal(head))
-print(postorder_traversal_v2(head))
+ic(postorder_traversal(head))
+ic(postorder_traversal_v2(head))
 print("==========")
