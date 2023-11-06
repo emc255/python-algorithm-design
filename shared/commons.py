@@ -48,26 +48,17 @@ class TreeNode:
 
 class Tree:
     def __init__(self, array: list):
-        self.head = self.create(array)
+        self.root = self.create(array)
 
     def create(self, arr: list, index: int = 0):
-        # root = TreeNode(arr[0])
-        # l = True
-        # for i in range(1, len(arr)):
-        #     if l:
-        #         if arr[i]:
-        #             root.left = TreeNode(arr[i])
-        #         l = False
-        #     else:
-        #         if arr[i]:
-        #             root.right = TreeNode(arr[i])
-        #
-        #     if root.left:
         if index < len(arr):
+            left_index = 2 * index + 1
+            right_index = 2 * index + 2
+            if arr[index] is None:
+                return None
             root = TreeNode(arr[index])
             root.left = self.create(arr, 2 * index + 1)
             root.right = self.create(arr, 2 * index + 2)
-
             return root
 
         return None
