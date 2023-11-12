@@ -67,7 +67,6 @@ def number_of_buses_to_destination_v2(routes: list[list], source: int, target: i
     if max_stop < target:
         return -1
 
-    n = len(routes)
     min_buses_to_reach = [float('inf')] * (max_stop + 1)
     min_buses_to_reach[source] = 0
 
