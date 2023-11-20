@@ -86,15 +86,25 @@ def garbage_collection(garbage: list, travel: list) -> int:
 
 
 def garbage_collection_v2(garbage: list, travel: list) -> int:
-    total_time = 0
-    last_indices = defaultdict(int)
+    ans = 0
 
-    for i, truck_type in enumerate(garbage):
-        if truck_type in {"M", "P", "G"}:
-            total_time += travel[i] * (i - last_indices[truck_type])
-            last_indices[truck_type] = i
+    n = len(garbage)
 
-    return total_time
+    m, p, g = False, False, False
+    for i in range(n - 1, -1, -1):
+        if not g and "G" in garbage[i]:
+            g = True
+            ans += sum(travel[:i])
+        if not m and "M" in garbage[i]:
+            m = True
+            ans += sum(travel[:i])
+        if not p and "P" in garbage[i]:
+            p = True
+            ans += sum(travel[:i])
+        if all([m, p, g]):
+            break
+    
+    return len("".join(garbage)) + ans
 
 
 ic(garbage_collection(["G", "P", "GP", "GG"], [2, 4, 3]))
