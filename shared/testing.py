@@ -1,5 +1,7 @@
 from collections import deque
 
+from icecream import ic
+
 tickets = [["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]
 
 map = {}
@@ -52,3 +54,19 @@ def find132pattern(nums: list) -> bool:
 
 print(find132pattern([1, 0, 1, -4, -3]))
 print(find132pattern([3, 5, 0, 3, 4]))
+
+
+def find_lonely(nums: list) -> list:
+    nums.sort()
+    result = []
+
+    for i in range(1, len(nums)):
+        if nums[i - 1] == nums[i]:
+            continue
+        if nums[i - 1] + 1 != nums[i]:
+            result.append(nums[i])
+
+    return result
+
+
+ic(find_lonely([1, 3, 5, 3]))
