@@ -52,18 +52,18 @@ def maximal_rectangle(matrix: list) -> int:
 
         return max_area
 
-    max_area = 0
+    maximum_area = 0
     row_histogram = [0] * len(matrix[0])
-
+  
     for row in matrix:
         for i in range(len(row)):
             if row[i] == '1':
                 row_histogram[i] += 1
             else:
                 row_histogram[i] = 0
-        max_area = max(max_area, largest_rectangle_area(row_histogram))
+        maximum_area = max(maximum_area, largest_rectangle_area(row_histogram))
 
-    return max_area
+    return maximum_area
 
 
 ic(maximal_rectangle([
