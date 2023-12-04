@@ -30,6 +30,7 @@ def find_diagonal_order(nums: list[list]) -> list:
     for r in range(len(nums)):
         for c in range(len(nums[r])):
             diagonals[r + c].append(nums[r][c])
+    ic(diagonals)
     for v in diagonals.values():
         result.extend(reversed(v))
 
