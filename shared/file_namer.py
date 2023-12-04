@@ -5,7 +5,7 @@ def file_namer(s: str) -> str:
     return s.replace(' ', '_').lower()
 
 
-filename = "Largest 3-Same-Digit Number in String"
+filename = "Minimum Time Visiting All Points"
 ic(file_namer(filename))
 
 
@@ -21,5 +21,5 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-func = "largestGoodInteger"
+func = "minTimeToVisitAllPoints"
 ic(function_namer(func))
