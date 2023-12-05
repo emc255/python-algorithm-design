@@ -5,7 +5,7 @@ def file_namer(s: str) -> str:
     return s.replace(' ', '_').lower()
 
 
-filename = "Minimum Time Visiting All Points"
+filename = "Count of Matches in Tournament"
 ic(file_namer(filename))
 
 
@@ -21,5 +21,5 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-func = "minTimeToVisitAllPoints"
+func = "numberOfMatches"
 ic(function_namer(func))
