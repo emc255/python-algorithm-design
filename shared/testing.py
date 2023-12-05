@@ -70,3 +70,17 @@ def find_lonely(nums: list) -> list:
 
 
 ic(find_lonely([1, 3, 5, 3]))
+
+
+def move_zero(numbers: list) -> list:
+    l, r = 0, len(numbers) - 1
+    while l < r:
+        if numbers[r] == 0:
+            r -= 1
+        if numbers[l] == 0:
+            numbers[l], numbers[r] = numbers[r], numbers[l]
+        l += 1
+    return numbers
+
+
+ic(move_zero([1, 0, 2, 0, 3]))
