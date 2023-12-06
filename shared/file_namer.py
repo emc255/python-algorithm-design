@@ -5,7 +5,7 @@ def file_namer(s: str) -> str:
     return s.replace(' ', '_').lower()
 
 
-filename = "Count of Matches in Tournament"
+filename = "Calculate Money in Leetcode Bank"
 ic(file_namer(filename))
 
 
@@ -21,5 +21,5 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-func = "numberOfMatches"
+func = "totalMoney"
 ic(function_namer(func))
