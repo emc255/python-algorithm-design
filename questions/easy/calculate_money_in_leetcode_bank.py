@@ -36,6 +36,9 @@ Constraints:
 """
 from icecream import ic
 
+"""
+"""
+
 
 def total_money(n: int) -> int:
     low = 1
