@@ -36,29 +36,73 @@ Constraints:
 """
 from icecream import ic
 
-"""
-"""
-
 
 def total_money(n: int) -> int:
+    day = 1
+    week = 0
+    result = 0
+    for i in range(1, n + 1):
+        result += day
+        day += 1
+        if i % 7 == 0:
+            week += 1
+            day = 1 + week
+    # low = 1
+    # high = 7 if n > 7 else n
+    # total = (high + low) * high // 2
+    # weeks = n // 7
+    # remaining_days = n % 7
+    # increment_weeks = weeks - 1 if weeks > 1 else 0
+    # iw = increment_weeks * 7
+    # ic(remaining_days)
+    # if remaining_days:
+    #     rdl = 1 + weeks
+    #     rdh = remaining_days + weeks + 1
+    #     remaining_days = (rdh + rdl) * remaining_days // 2
+    #     ic(rdl)
+    #     ic(rdh)
+    # ic((weeks * total) + iw)
+    # return (weeks * total) + iw + remaining_days
+    return result
+
+
+def total_money_v2(n: int) -> int:
     low = 1
-    high = 7 if n > 7 else n
+    high = min(7, n)
     total = (high + low) * high // 2
     weeks = n // 7
     remaining_days = n % 7
     increment_weeks = weeks - 1 if weeks > 1 else 0
-    iw = increment_weeks * 7
-    ic(remaining_days)
+    increment_weeks_total = 0
+    for i in range(1, increment_weeks + 1):
+        increment_weeks_total += 7 * i
+
     if remaining_days:
         rdl = 1 + weeks
         rdh = remaining_days + weeks
         remaining_days = (rdh + rdl) * remaining_days // 2
-        ic(rdl)
-        ic(rdh)
-    ic((weeks * total) + iw)
-    return (weeks * total) + iw + remaining_days
+
+    return (weeks * total) + increment_weeks_total + remaining_days
+
+
+def total_money_v3(n):
+    low = 1
+    high = min(7, n)
+    total = (high + low) * high // 2
+    weeks = n // 7
+    remaining_days = n % 7
+
+    increment_weeks_total = sum(7 * i for i in range(1, weeks)) if weeks > 1 else 0
+    remaining_days_total = 0
+    
+    if remaining_days:
+        remaining_days_total = sum(range(weeks + 1, weeks + remaining_days + 1))
+
+    return (weeks * total) + increment_weeks_total + remaining_days_total
 
 
 # Test the function
-ic(total_money(26))
-ic(total_money(10))
+# ic(total_money(20))
+# ic(total_money(10))
+
+ic(total_money_v3(20))
