@@ -5,10 +5,6 @@ def file_namer(s: str) -> str:
     return s.replace(' ', '_').lower()
 
 
-filename = "Calculate Money in Leetcode Bank"
-ic(file_namer(filename))
-
-
 def function_namer(s: str) -> str:
     new_name = []
 
@@ -21,5 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-func = "totalMoney"
+filename = "Largest Odd Number in String"
+ic(file_namer(filename))
+
+func = "largestOddNumber"
 ic(function_namer(func))
