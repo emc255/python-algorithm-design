@@ -62,7 +62,6 @@ def count_nice_pairs_v2(nums: list) -> int:
     count = 0
     ic(modified)
     for i in Counter(modified).values():
-        ic(i)
         count += i * (i - 1) // 2
     return count % (1000000000 + 7)
 

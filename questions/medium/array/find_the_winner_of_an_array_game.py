@@ -50,7 +50,6 @@ def get_winner(arr: list, k: int) -> int:
             winner = arr[i]
             element_to_move = arr.pop(1)
             arr.append(element_to_move)
-            ic(arr)
         else:
             counter = 1
             winner = arr[i + 1]
