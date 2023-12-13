@@ -36,6 +36,28 @@ from icecream import ic
 
 
 def num_special(mat: list) -> int:
+    result = 0
+    m = len(mat)
+    n = len(mat[0])
+    row_count = [0] * m
+    column_count = [0] * n
+
+    for row in range(m):
+        for col in range(n):
+            if mat[row][col] == 1:
+                row_count[row] += 1
+                column_count[col] += 1
+
+    for row in range(m):
+        for col in range(n):
+            if mat[row][col] == 1:
+                if row_count[row] == 1 and column_count[col] == 1:
+                    result += 1
+
+    return result
+
+
+def num_special_v2(mat: list) -> int:
     m = len(mat)
     n = len(mat[0])
     cols = [0] * n
