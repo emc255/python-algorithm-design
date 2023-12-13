@@ -73,8 +73,8 @@ def num_special_v2(mat: list) -> int:
     ans = 0
 
     for i in range(m):
-        isum = sum(mat[i])
-        if isum == 1:
+        total = sum(mat[i])
+        if total == 1:
             j = mat[i].index(1)
             # for j in range(n):
             if mat[i][j] and cols[j]:
