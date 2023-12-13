@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Transpose Matrix"
+filename = "Special Positions in a Binary Matrix"
 ic(file_namer(filename))
 
-func = "largestOddNumber"
+func = "numSpecial"
 ic(function_namer(func))
