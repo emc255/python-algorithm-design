@@ -49,7 +49,8 @@ from icecream import ic
 
 
 def ones_minus_zeros(grid: list) -> list:
-    pass
+    result = []
+    return result
 
 
 ic(ones_minus_zeros([[0, 1, 1], [1, 0, 1], [0, 0, 1]]))
