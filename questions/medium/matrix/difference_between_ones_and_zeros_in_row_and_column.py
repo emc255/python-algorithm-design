@@ -15,6 +15,9 @@ Return the difference matrix diff.
 Example 1:
 Input: grid = [[0,1,1],[1,0,1],[0,0,1]]
 Output: [[0,0,4],[0,0,4],[-2,-2,2]]
+[0,1,1],
+[1,0,1],
+[0,0,1]
 Explanation:
 - diff[0][0] = onesRow0 + onesCol0 - zerosRow0 - zerosCol0 = 2 + 1 - 1 - 2 = 0
 - diff[0][1] = onesRow0 + onesCol1 - zerosRow0 - zerosCol1 = 2 + 1 - 1 - 2 = 0
@@ -47,10 +50,35 @@ grid[i][j] is either 0 or 1.
 """
 from icecream import ic
 
+"""
+[0,1,1],
+[1,0,1],
+[0,0,1]
+"""
+
 
 def ones_minus_zeros(grid: list) -> list:
-    result = []
+    m, n = len(grid), len(grid[0])
+    result = [[0] * n for _ in range(m)]
+    rows_zeros = [0 for _ in range(m)]
+    rows_ones = [0 for _ in range(m)]
+    column_zeroes = [0 for _ in range(n)]
+    column_ones = [0 for _ in range(n)]
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == 0:
+                rows_zeros[i] += 1
+                column_zeroes[j] += 1
+            else:
+                rows_ones[i] += 1
+                column_ones[j] += 1
+
+    for i in range(m):
+        for j in range(n):
+            result[i][j] = rows_ones[i] + column_ones[j] - rows_zeros[i] - column_zeroes[j]
+
     return result
 
 
 ic(ones_minus_zeros([[0, 1, 1], [1, 0, 1], [0, 0, 1]]))
+ic(ones_minus_zeros([[1, 1, 1], [1, 1, 1]]))
