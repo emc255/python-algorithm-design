@@ -37,6 +37,7 @@ ai != bi
 Each pair of cities has at most one road connecting them.
 
 """
+from icecream import ic
 
 
 def maximum_network_rank(n: int, roads: list) -> int:
@@ -58,4 +59,4 @@ def maximum_network_rank(n: int, roads: list) -> int:
     return max_rank
 
 
-print(maximum_network_rank(4, [[0, 1], [0, 3], [1, 2], [1, 3]]))
+ic(maximum_network_rank(4, [[0, 1], [0, 3], [1, 2], [1, 3]]))

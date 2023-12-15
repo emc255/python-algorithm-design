@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Difference Between Ones and Zeros in Row and Column"
+filename = "Destination City"
 ic(file_namer(filename))
 
-func = "onesMinusZeros"
+func = "DestinationCity"
 ic(function_namer(func))
