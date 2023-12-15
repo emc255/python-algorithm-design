@@ -27,3 +27,21 @@ n == nums.length
 -109 <= nums[i] <= 109
 
 """
+from icecream import ic
+
+
+def find_132_pattern(nums: list) -> bool:
+    stack = []
+    current_minimum = nums[0]
+    for n in nums[1:]:
+        while stack and n >= stack[-1][0]:
+            stack.pop()
+        if stack and n > stack[-1][1]:
+            return True
+        stack.append([n, current_minimum])
+        current_minimum = min(current_minimum, n)
+    return False
+
+
+ic(find_132_pattern([1, 0, 1, -4, -3]))
+ic(find_132_pattern([3, 5, 0, 3, 4]))

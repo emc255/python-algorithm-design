@@ -17,7 +17,7 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Destination City"
+filename = "Move Zeroes"
 ic(file_namer(filename))
 
 func = "DestinationCity"
