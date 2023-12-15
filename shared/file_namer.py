@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Move Zeroes"
+filename = "Find All Lonely Numbers in the Array"
 ic(file_namer(filename))
 
-func = "DestinationCity"
+func = "findLonely"
 ic(function_namer(func))
