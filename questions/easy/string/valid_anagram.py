@@ -22,6 +22,7 @@ s and t consist of lowercase English letters.
 Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 
 """
+from collections import Counter
 
 
 def is_anagram(s: str, t: str) -> bool:
@@ -48,6 +49,11 @@ def is_anagram_v2(s: str, t: str) -> bool:
     return True
 
 
+def is_anagram_v3(s: str, t: str) -> bool:
+    return Counter(s) == Counter(t)
+
+
 print(is_anagram("anagram", "nagaram"))
 
 print(is_anagram_v2("anagram", "nagaram"))
+print(is_anagram_v3("anagram", "nagaram"))
