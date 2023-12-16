@@ -1,7 +1,5 @@
 from collections import deque
 
-from icecream import ic
-
 tickets = [["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]
 
 map = {}
@@ -20,6 +18,7 @@ for ticket in tickets:
 map.pop(temp_key[0])
 test.append(temp_key)
 my_queue = deque()
+
 # while map:
 #
 #     original_departure = temp_key[0]
@@ -31,56 +30,3 @@ my_queue = deque()
 #         departure, destination = my_queue.pop()
 #         if original_departure < departure or original_departure == departure and original_destination < destination:
 #             print(my_queue)
-
-
-print(test)
-print(temp_key)
-
-print(map)
-
-
-def find132pattern(nums: list) -> bool:
-    stack = []
-    current_minimum = nums[0]
-    for n in nums[1:]:
-        while stack and n >= stack[-1][0]:
-            stack.pop()
-        if stack and n > stack[-1][1]:
-            return True
-        stack.append([n, current_minimum])
-        current_minimum = min(current_minimum, n)
-    return False
-
-
-print(find132pattern([1, 0, 1, -4, -3]))
-print(find132pattern([3, 5, 0, 3, 4]))
-
-
-def find_lonely(nums: list) -> list:
-    nums.sort()
-    result = []
-
-    for i in range(1, len(nums)):
-        if nums[i - 1] == nums[i]:
-            continue
-        if nums[i - 1] + 1 != nums[i]:
-            result.append(nums[i])
-
-    return result
-
-
-ic(find_lonely([1, 3, 5, 3]))
-
-
-def move_zero(numbers: list) -> list:
-    l, r = 0, len(numbers) - 1
-    while l < r:
-        if numbers[r] == 0:
-            r -= 1
-        if numbers[l] == 0:
-            numbers[l], numbers[r] = numbers[r], numbers[l]
-        l += 1
-    return numbers
-
-
-ic(move_zero([1, 0, 2, 0, 3]))
