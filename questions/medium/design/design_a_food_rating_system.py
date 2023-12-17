@@ -76,7 +76,7 @@ class FoodRatings:
     def __init__(self, foods: list[str], cuisines: list[str], ratings: list[int]):
         pass
 
-    def change_rating(self, food: str, newRating: int) -> None:
+    def change_rating(self, food: str, new_rating: int) -> None:
         pass
 
     def highest_rated(self, cuisine: str) -> str:
