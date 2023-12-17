@@ -17,7 +17,7 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Valid Anagram"
+filename = "Design a Food Rating System"
 ic(file_namer(filename))
 
 func = "isAnagram"
