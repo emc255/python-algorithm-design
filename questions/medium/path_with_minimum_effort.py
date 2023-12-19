@@ -35,23 +35,23 @@ columns == heights[i].length
 1 <= heights[i][j] <= 106
 
 """
+from icecream import ic
 
 
 def minimum_effort_path(heights: list) -> int:
-    total_row = len(heights) - 1
-    total_column = len(heights[0]) - 1
+    r, c = len(heights), len(heights[0])
 
-    def testing(row, column):
-        if row <= 0 or column <= 0:
+    def dfs(row, column):
+        if row > r or column > c:
             return 0
-        if row == 1 and column == 1:
-            print(heights[row][column])
-            print(f'row = {row}')
+        total = 0
 
-        testing(row - 1, column)
-        testing(row, column - 1)
+        if row == r - 1:
+            return total
 
-    testing(total_row, total_column)
+        dfs(row + 1, column)
+
+    dfs(0, 0)
     pass
 
 
@@ -67,4 +67,4 @@ def minimum_effort_path(heights: list) -> int:
 7 8 9
 """
 # print(minimum_effort_path([[1, 2, 2], [3, 8, 2], [5, 3, 5]]))
-print(minimum_effort_path([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+ic(minimum_effort_path([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
