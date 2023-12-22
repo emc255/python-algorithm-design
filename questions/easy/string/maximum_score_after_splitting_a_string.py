@@ -41,13 +41,28 @@ def max_score(s: str) -> int:
     for i in range(len(s)):
         left_string = s[:i + 1] if i < len(s) - 1 else s[:i]
         right_string = s[i + 1:]
-        ic(left_string)
-        ic(right_string)
         zeroes = left_string.count("0")
         ones = right_string.count("1")
         result = max(result, zeroes + ones)
     return result
 
 
-# ic(max_score("00111"))
+def max_score_v2(s: str) -> int:
+    result = 0
+    zeroes = 0
+    ones = s.count("1")
+
+    for i in range(len(s) - 1):
+        if s[i] == "1":
+            ones -= 1
+        else:
+            zeroes = 1
+
+        result = max(result, zeroes + ones)
+
+    return result
+
+
+ic(max_score_v2("00111"))
 ic(max_score("1111"))
+ic(max_score_v2("00"))
