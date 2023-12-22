@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Buy Two Chocolates"
+filename = "Maximum Score After Splitting a String"
 ic(file_namer(filename))
 
-func = "buyChoco"
+func = "maxScore"
 ic(function_namer(func))
