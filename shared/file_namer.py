@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Score After Splitting a String"
+filename = "Minimum Changes To Make Alternating Binary String"
 ic(file_namer(filename))
 
-func = "maxScore"
+func = "minOperations"
 ic(function_namer(func))
