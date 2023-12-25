@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Changes To Make Alternating Binary String"
+filename = "Decode Ways"
 ic(file_namer(filename))
 
-func = "minOperations"
+func = "numDecodings"
 ic(function_namer(func))
