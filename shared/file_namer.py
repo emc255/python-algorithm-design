@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Dice Rolls With Target Sum"
+filename = "Minimum Time to Make Rope Colorful"
 ic(file_namer(filename))
 
-func = "numRollsToTarget"
+func = "minCost"
 ic(function_namer(func))
