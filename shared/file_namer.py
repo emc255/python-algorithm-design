@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Time to Make Rope Colorful"
+filename = "String Compression II"
 ic(file_namer(filename))
 
-func = "minCost"
+func = "getLengthOfOptimalCompression"
 ic(function_namer(func))
