@@ -48,8 +48,30 @@ from icecream import ic
 
 
 def get_length_of_optimal_compression(s: str, k: int) -> int:
-    result = 0
-    return result
+    def dfs(i, new_k, previous_char, previous_count):
+        if (i, new_k, previous_char, previous_count) in memo:
+            return memo[(i, new_k, previous_char, previous_count)]
+
+        if new_k < 0:
+            return float("inf")
+
+        if i == len(s):
+            return 0
+
+        if s[i] == previous_char:
+            increment = 1 if previous_count in [1, 9, 99] else 0
+            result = increment + dfs(i + 1, new_k, previous_char, previous_count + 1)
+        else:
+            result = min(
+                dfs(i + 1, new_k - 1, previous_char, previous_count),
+                1 + dfs(i + 1, new_k, s[i], 1)
+            )
+
+        memo[(i, new_k, previous_char, previous_count)] = result
+        return result
+
+    memo = {}
+    return dfs(0, k, "", 0)
 
 
 ic(get_length_of_optimal_compression("aabbaa", 2))
