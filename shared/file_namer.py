@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Difficulty of a Job Schedule"
+filename = "Redistribute Characters to Make All Strings Equal"
 ic(file_namer(filename))
 
-func = "minDifficulty"
+func = "makeEqual"
 ic(function_namer(func))
