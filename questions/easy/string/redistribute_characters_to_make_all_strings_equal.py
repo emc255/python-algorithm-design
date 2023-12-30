@@ -28,17 +28,32 @@ Constraints:
 words[i] consists of lowercase English letters.
 
 """
-from collections import defaultdict
+from collections import Counter
 
 from icecream import ic
 
 
 def make_equal(words: list[str]) -> bool:
-    available_letters = defaultdict(list)
-    for word in words:
-        available_letters = Count(word)
+    all_words = ''.join(words)
+    n = len(words)
+    set1 = set(all_words)
+    ic(set1)
+    for k, v in dict(Counter(all_words)).items():
+        if v % n != 0:
+            return False
+    return True
 
+
+def make_equal_v2(words: list[str]) -> bool:
+    all_words = ''.join(words)
+    n = len(words)
+    letters = set(all_words)
+
+    for letter in letters:
+        if all_words.count(letter) % n != 0:
+            return False
     return True
 
 
 ic(make_equal(["abc", "aabc", "bc"]))
+ic(make_equal(["ab", "a"]))
