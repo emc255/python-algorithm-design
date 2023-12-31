@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Redistribute Characters to Make All Strings Equal"
+filename = "Largest Substring Between Two Equal Characters"
 ic(file_namer(filename))
 
-func = "makeEqual"
+func = "maxLengthBetweenEqualCharacters"
 ic(function_namer(func))
