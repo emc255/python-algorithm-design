@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Largest Substring Between Two Equal Characters"
+filename = "Assign Cookies"
 ic(file_namer(filename))
 
-func = "maxLengthBetweenEqualCharacters"
+func = "findContentChildren"
 ic(function_namer(func))
