@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Assign Cookies"
+filename = "Convert an Array Into a 2D Array With Conditions"
 ic(file_namer(filename))
 
-func = "findContentChildren"
+func = "findMatrix"
 ic(function_namer(func))
