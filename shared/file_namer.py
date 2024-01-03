@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Convert an Array Into a 2D Array With Conditions"
+filename = "Number of Laser Beams in a Bank"
 ic(file_namer(filename))
 
-func = "findMatrix"
+func = "numberOfBeams"
 ic(function_namer(func))
