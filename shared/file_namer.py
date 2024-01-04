@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Laser Beams in a Bank"
+filename = "Minimum Number of Operations to Make Array Empty"
 ic(file_namer(filename))
 
-func = "numberOfBeams"
+func = "minOperations"
 ic(function_namer(func))
