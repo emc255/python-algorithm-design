@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of Operations to Make Array Empty"
+filename = "Longest Increasing Subsequence"
 ic(file_namer(filename))
 
-func = "minOperations"
+func = "lengthOfLongestIncreasingSubsequence"
 ic(function_namer(func))
