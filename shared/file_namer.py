@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Longest Increasing Subsequence"
+filename = "Maximum Profit in Job Scheduling"
 ic(file_namer(filename))
 
-func = "lengthOfLongestIncreasingSubsequence"
+func = "jobScheduling"
 ic(function_namer(func))
