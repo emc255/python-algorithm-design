@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Range Sum of BST"
+filename = "Amount of Time for Binary Tree to Be Infected"
 ic(file_namer(filename))
 
-func = "rangeSumBST"
+func = "amountOfTime"
 ic(function_namer(func))
