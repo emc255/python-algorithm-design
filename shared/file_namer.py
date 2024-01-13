@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Amount of Time for Binary Tree to Be Infected"
+filename = "Minimum Number of Steps to Make Two Strings Anagram"
 ic(file_namer(filename))
 
-func = "amountOfTime"
+func = "minSteps"
 ic(function_namer(func))
