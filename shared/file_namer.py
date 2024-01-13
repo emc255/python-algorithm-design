@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of Steps to Make Two Strings Anagram"
+filename = "Group Anagrams"
 ic(file_namer(filename))
 
-func = "minSteps"
+func = "groupAnagrams"
 ic(function_namer(func))
