@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Subarray"
+filename = "Determine if Two Strings Are Close"
 ic(file_namer(filename))
 
-func = "maxSubArray"
+func = "closeStrings"
 ic(function_namer(func))
