@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Group Anagrams"
+filename = "Maximum Subarray"
 ic(file_namer(filename))
 
-func = "groupAnagrams"
+func = "maxSubArray"
 ic(function_namer(func))
