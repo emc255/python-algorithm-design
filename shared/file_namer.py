@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Determine if Two Strings Are Close"
+filename = "Find Players With Zero or One Losses"
 ic(file_namer(filename))
 
-func = "closeStrings"
+func = "findWinners"
 ic(function_namer(func))
