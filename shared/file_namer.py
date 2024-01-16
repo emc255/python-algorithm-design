@@ -17,7 +17,7 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find Players With Zero or One Losses"
+filename = "Insert Delete GetRandom O(1)"
 ic(file_namer(filename))
 
 func = "findWinners"
