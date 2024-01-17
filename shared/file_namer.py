@@ -17,8 +17,8 @@ def function_namer(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Insert Delete GetRandom O(1)"
+filename = "Unique Number of Occurrences"
 ic(file_namer(filename))
 
-func = "findWinners"
+func = "uniqueOccurrences"
 ic(function_namer(func))
