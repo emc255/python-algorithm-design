@@ -1,11 +1,11 @@
 from icecream import ic
 
 
-def file_namer(s: str) -> str:
+def format_file_name(s: str) -> str:
     return s.replace(' ', '_').lower()
 
 
-def function_namer(s: str) -> str:
+def camel_to_snake_case(s: str) -> str:
     new_name = []
 
     for c in s:
@@ -18,7 +18,7 @@ def function_namer(s: str) -> str:
 
 
 filename = "Unique Number of Occurrences"
-ic(file_namer(filename))
+ic(format_file_name(filename))
 
 func = "uniqueOccurrences"
-ic(function_namer(func))
+ic(camel_to_snake_case(func))
