@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Unique Number of Occurrences"
+filename = "Jump Game"
 ic(format_file_name(filename))
 
-func = "uniqueOccurrences"
+func = "canJump"
 ic(camel_to_snake_case(func))
