@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Jump Game"
+filename = "Minimum Falling Path Sum"
 ic(format_file_name(filename))
 
-func = "canJump"
+func = "minFallingPathSum"
 ic(camel_to_snake_case(func))
