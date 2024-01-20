@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Falling Path Sum"
+filename = "Sum of Subarray Minimums"
 ic(format_file_name(filename))
 
-func = "minFallingPathSum"
+func = "sumSubarrayMins"
 ic(camel_to_snake_case(func))
