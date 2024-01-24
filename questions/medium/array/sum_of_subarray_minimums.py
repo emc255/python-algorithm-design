@@ -36,14 +36,14 @@ def sum_subarray_minimum(arr: list[int]) -> int:
             index, value = stack.pop()
             left = index - stack[-1][0] if stack else index + 1
             right = i - index
-            result += value * left * right
+            result = (result + value * left * right) % mod
         stack.append((i, arr[i]))
 
     for i in range(len(stack)):
         index, value = stack[i]
         left = index - stack[i - 1][0] if i > 0 else index + 1
         right = len(arr) - index
-        result += value * left * right % mod
+        result = (result + value * left * right) % mod
 
     return result
 
@@ -59,7 +59,7 @@ def sum_subarray_minimum_v2(arr: list[int]) -> int:
             index, value = stack.pop()
             left = index - stack[-1][0] if stack else index + 1
             right = i - index
-            result += value * left * right % mod
+            result = (result + value * left * right) % mod
         stack.append((i, arr[i]))
 
     return result
