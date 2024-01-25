@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Pseudo-Palindromic Paths in a Binary Tree"
+filename = "Longest Common Subsequence"
 ic(format_file_name(filename))
 
-func = "pseudoPalindromicPaths"
+func = "longestCommonSubsequence"
 ic(camel_to_snake_case(func))
