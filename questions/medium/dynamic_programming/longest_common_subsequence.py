@@ -36,26 +36,15 @@ from icecream import ic
 
 
 def longest_common_subsequence(text1: str, text2: str) -> int:
-    min_length_word = text1 if len(text2) > len(text1) else text2
-    max_length_word = text2 if len(text2) > len(text1) else text1
-    temp_min_word = ""
-    for idx in range(len(min_length_word)):
-        if min_length_word[idx] in max_length_word:
-            temp_min_word += max_length_word[idx]
-    ic(temp_min_word)
-    count = 0
-    for i in range(len(min_length_word)):
-        index = i
-        j = 0
-        temp = 0
-        while j < len(max_length_word) and index < len(min_length_word):
-            if min_length_word[index] == max_length_word[j]:
-                temp += 1
-                index += 1
-            j += 1
-        count = max(count, temp)
+    dp = [[0 for _ in range(len(text2) + 1)] for _ in range(len(text1) + 1)]
+    for i in range(len(text1) - 1, -1, -1):
+        for j in range(len(text2) - 1, -1, -1):
+            if text1[i] == text2[j]:
+                dp[i][j] = 1 + dp[i + 1][j + 1]
+            else:
+                dp[i][j] = max(dp[i + 1][j], dp[i][j + 1])
 
-    return count
+    return dp[0][0]
 
 
 ic(longest_common_subsequence("cabde", "ace"))
