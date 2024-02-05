@@ -52,10 +52,10 @@ class Elevator:
             return "No op"
 
         if len(self.queue) > 0 and self.floor_request == -1:
-            self.floor_request = self.queue.pop()
+            self.floor_request = self.queue.popleft()
 
         if self.current_floor in self.queue:
-            self.queue = [x for x in self.queue if x != self.current_floor]
+            self.queue = deque([x for x in self.queue if x != self.current_floor])
             temp = self.current_floor
             return f"open and close / CURRENT FLOOR: {temp} floor"
 
@@ -73,25 +73,21 @@ class Elevator:
 
 
 e = Elevator(10)
-e.request_floor(5)
+
 e.request_floor(3)
-e.request_floor(6)
+e.request_floor(1)
 ic(e.get_action())
 ic(e.get_action())
 ic(e.get_action())
 ic(e.get_action())
+e.request_floor(2)
+e.request_floor(8)
+ic(e.get_action())
+
 ic(e.get_action())
 ic(e.get_action())
+
 ic(e.get_action())
 ic(e.get_action())
-ic(e.get_action())
-ic(e.get_action())
-ic(e.get_action())
-ic(e.get_action())
-ic(e.get_action())
-ic(e.get_action())
-e.request_floor(3)
-ic(e.get_action())
-ic(e.get_action())
-ic(e.get_action())
+
 ic(e.get_action())
