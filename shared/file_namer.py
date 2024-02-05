@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Out of Boundary Paths"
+filename = "First Unique Character in a String"
 ic(format_file_name(filename))
 
-func = "findPaths"
+func = "firstUniqChar"
 ic(camel_to_snake_case(func))
