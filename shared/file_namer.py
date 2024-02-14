@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "First Unique Character in a String"
+filename = "Rearrange Array Elements by Sign"
 ic(format_file_name(filename))
 
-func = "firstUniqChar"
+func = "rearrangeArray"
 ic(camel_to_snake_case(func))
