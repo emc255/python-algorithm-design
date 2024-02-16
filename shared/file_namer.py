@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Rearrange Array Elements by Sign"
+filename = "Least Number of Unique Integers after K Removals"
 ic(format_file_name(filename))
 
-func = "rearrangeArray"
+func = "findLeastNumOfUniqueInts"
 ic(camel_to_snake_case(func))
