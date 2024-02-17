@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Least Number of Unique Integers after K Removals"
+filename = "Furthest Building You Can Reach"
 ic(format_file_name(filename))
 
-func = "findLeastNumOfUniqueInts"
+func = "furthestBuilding"
 ic(camel_to_snake_case(func))
