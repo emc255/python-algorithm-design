@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Furthest Building You Can Reach"
+filename = "Maximum Odd Binary Number"
 ic(format_file_name(filename))
 
-func = "furthestBuilding"
+func = "maximumOddBinaryNumber"
 ic(camel_to_snake_case(func))
