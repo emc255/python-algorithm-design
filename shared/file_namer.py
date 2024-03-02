@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Odd Binary Number"
+filename = "Squares of a Sorted Array"
 ic(format_file_name(filename))
 
-func = "maximumOddBinaryNumber"
+func = "sortedSquares"
 ic(camel_to_snake_case(func))
