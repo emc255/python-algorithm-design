@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Squares of a Sorted Array"
+filename = "Count Elements With Maximum Frequency"
 ic(format_file_name(filename))
 
-func = "sortedSquares"
+func = "maxFrequencyElements"
 ic(camel_to_snake_case(func))
