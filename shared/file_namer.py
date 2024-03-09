@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Elements With Maximum Frequency"
+filename = "Minimum Common Value"
 ic(format_file_name(filename))
 
-func = "maxFrequencyElements"
+func = "getCommon"
 ic(camel_to_snake_case(func))
