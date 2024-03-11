@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Common Value"
+filename = "Custom Sort String"
 ic(format_file_name(filename))
 
-func = "getCommon"
+func = "customSortString"
 ic(camel_to_snake_case(func))
