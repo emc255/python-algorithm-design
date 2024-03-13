@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Custom Sort String"
+filename = "Find the Pivot Integer"
 ic(format_file_name(filename))
 
-func = "customSortString"
+func = "pivotInteger"
 ic(camel_to_snake_case(func))
