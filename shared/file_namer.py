@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Product of Array Except Self"
+filename = "Reorder List"
 ic(format_file_name(filename))
 
-func = "productExceptSelf"
+func = "reorderList"
 ic(camel_to_snake_case(func))
