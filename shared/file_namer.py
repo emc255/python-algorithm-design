@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Binary Subarrays With Sum"
+filename = "Reorder List"
 ic(format_file_name(filename))
 
-func = "numSubarraysWithSum"
+func = "reorderList"
 ic(camel_to_snake_case(func))
