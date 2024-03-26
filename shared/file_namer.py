@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find the Pivot Integer"
+filename = "Binary Subarrays With Sum"
 ic(format_file_name(filename))
 
-func = "pivotInteger"
+func = "numSubarraysWithSum"
 ic(camel_to_snake_case(func))
