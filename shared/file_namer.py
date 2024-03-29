@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Reorder List"
+filename = "Length of Longest Subarray With at Most K Frequency"
 ic(format_file_name(filename))
 
-func = "reorderList"
+func = "maxSubarrayLength"
 ic(camel_to_snake_case(func))
