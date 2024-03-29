@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Length of Longest Subarray With at Most K Frequency"
+filename = "Count Subarrays Where Max Element Appears at Least K Times"
 ic(format_file_name(filename))
 
-func = "maxSubarrayLength"
+func = "countSubarrays"
 ic(camel_to_snake_case(func))
