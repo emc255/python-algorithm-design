@@ -45,7 +45,32 @@ def is_isomorphic(s: str, t: str) -> bool:
     return True
 
 
+def is_isomorphic_v2(s: str, t: str) -> bool:
+    s_dict = {}
+    for i in range(len(s)):
+        s_char = s[i]
+        t_char = t[i]
+
+        # Check if t_char is already mapped to a different s_char
+        if t_char in s_dict.values() and s_char not in s_dict:
+            return False
+
+        # Check if s_char is already mapped to a different t_char
+        if s_char in s_dict and s_dict[s_char] != t_char:
+            return False
+
+        # Add the mapping of s_char to t_char
+        s_dict[s_char] = t_char
+
+    return True
+
+
 print(is_isomorphic("egg", "add"))
 print(is_isomorphic("paper", "title"))
 print(is_isomorphic("Foo", "bar"))
 print(is_isomorphic("badc", "baba"))
+
+print(is_isomorphic_v2("egg", "add"))
+print(is_isomorphic_v2("paper", "title"))
+print(is_isomorphic_v2("Foo", "bar"))
+print(is_isomorphic_v2("badc", "baba"))
