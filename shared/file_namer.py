@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Subarrays Where Max Element Appears at Least K Times"
+filename = "Word Search"
 ic(format_file_name(filename))
 
-func = "countSubarrays"
+func = "exist"
 ic(camel_to_snake_case(func))
