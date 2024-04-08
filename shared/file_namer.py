@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Nesting Depth of the Parentheses"
+filename = "Number of Students Unable to Eat Lunch"
 ic(format_file_name(filename))
 
-func = "maxDepth"
+func = "countStudents"
 ic(camel_to_snake_case(func))
