@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Students Unable to Eat Lunch"
+filename = "Reveal Cards In Increasing Order"
 ic(format_file_name(filename))
 
-func = "countStudents"
+func = "deckRevealedIncreasing"
 ic(camel_to_snake_case(func))
