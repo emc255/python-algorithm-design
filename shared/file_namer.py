@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Reveal Cards In Increasing Order"
+filename = "Remove K Digits"
 ic(format_file_name(filename))
 
-func = "deckRevealedIncreasing"
+func = "removeKdigits"
 ic(camel_to_snake_case(func))
