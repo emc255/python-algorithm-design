@@ -17,7 +17,7 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Remove to Make Valid Parentheses"
+filename = "Trapping Rain Water"
 ic(format_file_name(filename))
 
 func = "minRemoveToMakeValid"
