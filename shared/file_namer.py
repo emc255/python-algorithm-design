@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Trapping Rain Water"
+filename = "Sum Root to Leaf Numbers"
 ic(format_file_name(filename))
 
-func = "minRemoveToMakeValid"
+func = "sumNumbers"
 ic(camel_to_snake_case(func))
