@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sum Root to Leaf Numbers"
+filename = "Add One Row to Tree"
 ic(format_file_name(filename))
 
-func = "sumNumbers"
+func = "addOneRow"
 ic(camel_to_snake_case(func))
