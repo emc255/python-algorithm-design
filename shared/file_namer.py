@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Add One Row to Tree"
+filename = "Smallest String Starting From Leaf"
 ic(format_file_name(filename))
 
-func = "addOneRow"
+func = "smallestFromLeaf"
 ic(camel_to_snake_case(func))
