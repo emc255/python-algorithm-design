@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Smallest String Starting From Leaf"
+filename = "Island Perimeter"
 ic(format_file_name(filename))
 
-func = "smallestFromLeaf"
+func = "islandPerimeter"
 ic(camel_to_snake_case(func))
