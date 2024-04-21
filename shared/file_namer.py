@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Islands"
+filename = "Find All Groups of Farmland"
 ic(format_file_name(filename))
 
-func = "numIslands"
+func = "findFarmland"
 ic(camel_to_snake_case(func))
