@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find if Path Exists in Graph"
+filename = "Open the LockOpen the Lock"
 ic(format_file_name(filename))
 
-func = "validPath"
+func = "openLock"
 ic(camel_to_snake_case(func))
