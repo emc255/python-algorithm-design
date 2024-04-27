@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Open the LockOpen the Lock"
+filename = "Freedom Trail"
 ic(format_file_name(filename))
 
-func = "openLock"
+func = "findRotateSteps"
 ic(camel_to_snake_case(func))
