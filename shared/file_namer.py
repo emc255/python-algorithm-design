@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sum of Distances in Tree"
+filename = "Minimum Number of Operations to Make Array XOR Equal to K"
 ic(format_file_name(filename))
 
-func = "sumOfDistancesInTree"
+func = "minOperations"
 ic(camel_to_snake_case(func))
