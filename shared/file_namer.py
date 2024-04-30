@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of Operations to Make Array XOR Equal to K"
+filename = "Number of Wonderful Substrings"
 ic(format_file_name(filename))
 
-func = "minOperations"
+func = "wonderfulSubstrings"
 ic(camel_to_snake_case(func))
