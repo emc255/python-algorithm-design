@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Wonderful Substrings"
+filename = "Compare Version Numbers"
 ic(format_file_name(filename))
 
-func = "wonderfulSubstrings"
+func = "compareVersion"
 ic(camel_to_snake_case(func))
