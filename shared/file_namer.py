@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Compare Version Numbers"
+filename = "Boats to Save People"
 ic(format_file_name(filename))
 
-func = "compareVersion"
+func = "numRescueBoats"
 ic(camel_to_snake_case(func))
