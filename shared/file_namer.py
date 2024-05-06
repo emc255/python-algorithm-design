@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Boats to Save People"
+filename = "Delete Node in a Linked List"
 ic(format_file_name(filename))
 
-func = "numRescueBoats"
+func = "deleteNode"
 ic(camel_to_snake_case(func))
