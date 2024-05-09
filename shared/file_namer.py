@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Double a Number Represented as a Linked List"
+filename = "Maximize Happiness of Selected Children"
 ic(format_file_name(filename))
 
-func = "doubleIt"
+func = "maximumHappinessSum"
 ic(camel_to_snake_case(func))
