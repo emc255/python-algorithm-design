@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Cost to Hire K Workers"
+filename = "Largest Local Values in a Matrix"
 ic(format_file_name(filename))
 
-func = "minimumcostToHireWorkers"
+func = "largestLocal"
 ic(camel_to_snake_case(func))
