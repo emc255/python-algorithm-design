@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Largest Local Values in a Matrix"
+filename = "Score After Flipping Matrix"
 ic(format_file_name(filename))
 
-func = "largestLocal"
+func = "matrixScore"
 ic(camel_to_snake_case(func))
