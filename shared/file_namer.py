@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Score After Flipping Matrix"
+filename = "Path with Maximum Gold"
 ic(format_file_name(filename))
 
-func = "matrixScore"
+func = "getMaximumGold"
 ic(camel_to_snake_case(func))
