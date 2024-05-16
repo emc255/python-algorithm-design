@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find the Safest Path in a Grid"
+filename = "Evaluate Boolean Binary Tree"
 ic(format_file_name(filename))
 
-func = "maximumSafenessFactor"
+func = "evaluateTree"
 ic(camel_to_snake_case(func))

@@ -34,9 +34,8 @@ from shared.commons import TreeNode
 
 def count_nodes(root: Optional[TreeNode]) -> int:
     count = 0
-    stack = []
+    stack = [root]
 
-    stack.append(root)
     while stack:
         node = stack.pop()
         if node:
