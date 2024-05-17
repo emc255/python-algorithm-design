@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Path with Maximum Gold"
+filename = "Delete Leaves With a Given Value"
 ic(format_file_name(filename))
 
-func = "getMaximumGold"
+func = "removeLeafNodes"
 ic(camel_to_snake_case(func))
