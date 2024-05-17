@@ -35,13 +35,20 @@ The number of nodes in the tree is in the range [1, 3000].
 """
 from typing import Optional
 
-from icecream import ic
-
 from shared.commons import TreeNode
 
 
 def remove_leaf_nodes(root: Optional[TreeNode], target: int) -> Optional[TreeNode]:
-    pass
+    if not root:
+        return None
+
+    root.left = remove_leaf_nodes(root.left, target)
+    root.right = remove_leaf_nodes(root.right, target)
+
+    if not root.left and not root.right and root.val == target:
+        return None
+
+    return root
 
 
 tree = TreeNode(1)
@@ -51,4 +58,4 @@ tree.left.left = TreeNode(2)
 tree.right.left = TreeNode(2)
 tree.right.right = TreeNode(4)
 
-ic(remove_leaf_nodes(tree, 2))
+remove_leaf_nodes(tree, 2).print()
