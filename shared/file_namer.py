@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Delete Leaves With a Given Value"
+filename = "Distribute Coins in Binary Tree"
 ic(format_file_name(filename))
 
-func = "removeLeafNodes"
+func = "distributeCoins"
 ic(camel_to_snake_case(func))
