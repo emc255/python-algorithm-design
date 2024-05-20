@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Distribute Coins in Binary Tree"
+filename = "Sum of All Subset XOR Totals"
 ic(format_file_name(filename))
 
-func = "distributeCoins"
+func = "subsetXORSum"
 ic(camel_to_snake_case(func))
