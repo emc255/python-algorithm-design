@@ -24,20 +24,19 @@ from icecream import ic
 
 
 def subsets(nums: list[int]) -> list[list[int]]:
-    result = [[]]
+    def dp(i):
+        if i >= len(nums):
+            result.append(current_subsets.copy())
+            return
+        current_subsets.append(nums[i])
+        dp(i + 1)
+        current_subsets.pop()
+        dp(i + 1)
 
-    def dp(i, combinations):
-        if new_amount == 0:
-            found = tuple(sorted(list(combinations)))
-            changes.add(found)
-
-        for num in nums:
-            combinations.append(coin)
-            dp(num, combinations)
-            combinations.pop()
-
-    changes = set()
-    dp(0, [])
+    result = []
+    current_subsets = []
+    dp(0)
+    return result
 
 
 ic(subsets([1, 2, 3]))
