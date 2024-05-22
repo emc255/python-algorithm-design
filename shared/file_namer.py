@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sum of All Subset XOR Totals"
+filename = "Palindrome Partitioning"
 ic(format_file_name(filename))
 
-func = "subsetXORSum"
+func = "partition"
 ic(camel_to_snake_case(func))
