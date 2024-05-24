@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "The Number of Beautiful Subsets"
+filename = "Maximum Score Words Formed by Letters"
 ic(format_file_name(filename))
 
-func = "beautifulSubsets"
+func = "maxScoreWords"
 ic(camel_to_snake_case(func))

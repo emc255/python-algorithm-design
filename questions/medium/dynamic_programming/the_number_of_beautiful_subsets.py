@@ -32,19 +32,23 @@ from icecream import ic
 
 
 def beautiful_subsets(nums: list[int], k: int) -> int:
-    def dp(start):
-        s = [nums[start]]
-        for i in range(start + 1, len(nums)):
-            if abs(s[-1] - nums[i]) > k:
-                s.append(nums[i])
-        ic(len(s))
-        return len(s) - 1
+    def dp(start, current_subset):
+        nonlocal result
+
+        if current_subset:
+            result += 1  # Count the current subset if it's non-empty
+
+        for i in range(start, len(nums)):
+            # Check if the current element can be added to the subset
+            if all(abs(nums[i] - num) != k for num in current_subset):
+                current_subset.append(nums[i])
+                dp(i + 1, current_subset)
+                current_subset.pop()  # Backtrack to explore other possibilities
 
     result = 0
-    for i in range(len(nums)):
-        result += dp(i)
-
-    return result + len(nums)
+    nums.sort()  # Sort the nums array to handle subsets in a systematic way
+    dp(0, [])
+    return result
 
 
 ic(beautiful_subsets([2, 4, 6, 8], 2))
