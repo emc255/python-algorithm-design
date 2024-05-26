@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Word Break II"
+filename = "Student Attendance Record II"
 ic(format_file_name(filename))
 
-func = "wordBreak"
+func = "checkRecord"
 ic(camel_to_snake_case(func))
