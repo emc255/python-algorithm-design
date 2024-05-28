@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Student Attendance Record II"
+filename = "Get Equal Substrings Within Budget"
 ic(format_file_name(filename))
 
-func = "checkRecord"
+func = "equalSubstring"
 ic(camel_to_snake_case(func))
