@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Get Equal Substrings Within Budget"
+filename = "Special Array With X Elements Greater Than or Equal X"
 ic(format_file_name(filename))
 
-func = "equalSubstring"
+func = "checkRecord"
 ic(camel_to_snake_case(func))
