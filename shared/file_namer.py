@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Special Array With X Elements Greater Than or Equal X"
+filename = "Number of Steps to Reduce a Number in Binary Representation to One"
 ic(format_file_name(filename))
 
-func = "checkRecord"
+func = "numberSteps"
 ic(camel_to_snake_case(func))
