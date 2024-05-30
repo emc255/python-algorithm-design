@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Steps to Reduce a Number in Binary Representation to One"
+filename = "Count Triplets That Can Form Two Arrays of Equal XOR"
 ic(format_file_name(filename))
 
-func = "numberSteps"
+func = "countTriplets"
 ic(camel_to_snake_case(func))
