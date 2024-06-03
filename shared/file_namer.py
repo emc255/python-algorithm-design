@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Score of a String"
+filename = "Append Characters to String to Make Subsequence"
 ic(format_file_name(filename))
 
-func = "scoreOfString"
+func = "appendCharacters"
 ic(camel_to_snake_case(func))
