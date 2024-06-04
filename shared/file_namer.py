@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Append Characters to String to Make Subsequence"
+filename = "Longest Palindrome"
 ic(format_file_name(filename))
 
-func = "appendCharacters"
+func = "longestPalindrome"
 ic(camel_to_snake_case(func))
