@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Longest Palindrome"
+filename = "Hand of Straights"
 ic(format_file_name(filename))
 
-func = "longestPalindrome"
+func = "isNStraightHand"
 ic(camel_to_snake_case(func))
