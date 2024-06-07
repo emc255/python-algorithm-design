@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Replace Words"
+filename = "Remove Duplicates from Sorted Array II"
 ic(format_file_name(filename))
 
-func = "replaceWords"
+func = "removeDuplicates"
 ic(camel_to_snake_case(func))
