@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Hand of Straights"
+filename = "Replace Words"
 ic(format_file_name(filename))
 
-func = "isNStraightHand"
+func = "replaceWords"
 ic(camel_to_snake_case(func))
