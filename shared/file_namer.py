@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Remove Duplicates from Sorted Array II"
+filename = "Best Time to Buy and Sell Stock II"
 ic(format_file_name(filename))
 
-func = "removeDuplicates"
+func = "maxProfit"
 ic(camel_to_snake_case(func))
