@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Best Time to Buy and Sell Stock II"
+filename = "Continuous Subarray Sum"
 ic(format_file_name(filename))
 
-func = "maxProfit"
+func = "checkSubarraySum"
 ic(camel_to_snake_case(func))
