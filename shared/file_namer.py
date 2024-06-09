@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Continuous Subarray Sum"
+filename = "Subarray Sums Divisible by K"
 ic(format_file_name(filename))
 
-func = "checkSubarraySum"
+func = "subarraysDivByK"
 ic(camel_to_snake_case(func))
