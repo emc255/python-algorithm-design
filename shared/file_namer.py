@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Relative Sort Array"
+filename = "Height Checker"
 ic(format_file_name(filename))
 
-func = "relativeSortArray"
+func = "heightChecker"
 ic(camel_to_snake_case(func))
