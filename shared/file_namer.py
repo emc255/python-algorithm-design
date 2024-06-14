@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of Moves to Seat Everyone"
+filename = "Sort Colors"
 ic(format_file_name(filename))
 
-func = "minMovesToSeat"
+func = "sortColors"
 ic(camel_to_snake_case(func))
