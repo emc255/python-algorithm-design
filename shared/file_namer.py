@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Subarray Sums Divisible by K"
+filename = "Minimum Increment to Make Array Unique"
 ic(format_file_name(filename))
 
-func = "subarraysDivByK"
+func = "minIncrementForUnique"
 ic(camel_to_snake_case(func))
