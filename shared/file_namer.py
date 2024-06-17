@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "IPO"
+filename = "Patching Array"
 ic(format_file_name(filename))
 
-func = "findMaximizedCapital"
+func = "minPatches"
 ic(camel_to_snake_case(func))
