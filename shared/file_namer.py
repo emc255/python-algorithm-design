@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Patching Array"
+filename = "Sum of Square Numbers"
 ic(format_file_name(filename))
 
-func = "minPatches"
+func = "judgeSquareSum"
 ic(camel_to_snake_case(func))
