@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Height Checker"
+filename = "IPO"
 ic(format_file_name(filename))
 
-func = "heightChecker"
+func = "findMaximizedCapital"
 ic(camel_to_snake_case(func))
