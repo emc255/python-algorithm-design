@@ -35,3 +35,4 @@ def judge_square_sum(c: int) -> bool:
 
 ic(judge_square_sum(4))
 ic(judge_square_sum(5))
+ic(judge_square_sum(10))
