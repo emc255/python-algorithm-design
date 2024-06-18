@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sum of Square Numbers"
+filename = "Most Profit Assigning Work"
 ic(format_file_name(filename))
 
-func = "judgeSquareSum"
+func = "maxProfitAssignment"
 ic(camel_to_snake_case(func))
