@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Grumpy Bookstore Owner"
+filename = "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit"
 ic(format_file_name(filename))
 
-func = "maxSatisfied"
+func = "longestSubarray"
 ic(camel_to_snake_case(func))
