@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of K Consecutive Bit Flips"
+filename = "Binary Search Tree to Greater Sum Tree"
 ic(format_file_name(filename))
 
-func = "minKBitFlips"
+func = "bstToGst"
 ic(camel_to_snake_case(func))
