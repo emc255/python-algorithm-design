@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Number of Nice Subarrays"
+filename = "Minimum Number of K Consecutive Bit Flips"
 ic(format_file_name(filename))
 
-func = "numberOfSubarrays"
+func = "minKBitFlips"
 ic(camel_to_snake_case(func))
