@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Binary Search Tree to Greater Sum Tree"
+filename = "Minimum Difference Between Largest and Smallest Value in Three Moves"
 ic(format_file_name(filename))
 
-func = "bstToGst"
+func = "minDifference"
 ic(camel_to_snake_case(func))
