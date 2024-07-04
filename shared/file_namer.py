@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Difference Between Largest and Smallest Value in Three Moves"
+filename = "Merge Nodes in Between Zeros"
 ic(format_file_name(filename))
 
-func = "minDifference"
+func = "mergeNodes"
 ic(camel_to_snake_case(func))
