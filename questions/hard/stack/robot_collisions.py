@@ -79,11 +79,38 @@ def survived_robots_healths(positions: list[int], healths: list[int], directions
                 elif healths[i] < healths[index]:
                     healths[index] -= 1
                     healths[i] = 0
-                    stack.append(healths[index])
+                    stack.append(index)
                 else:
                     healths[i] = healths[index] = 0
 
     return [health for health in healths if health > 0]
+
+
+def survived_robots_healths_v2(positions: list[int], healths: list[int], directions: str) -> list[int]:
+    n = len(positions)
+    ind = [i for i in range(n)]
+    ind.sort(key=lambda x: positions[x])
+    s = []
+    for x in ind:
+        if directions[x] == 'L':
+            while s:
+                y = s[-1]
+                if healths[x] == healths[y]:
+                    healths[x] = healths[y] = 0
+                    s.pop()
+                    break
+                if healths[x] > healths[y]:
+                    healths[x] -= 1
+                    healths[y] = 0
+                    s.pop()
+                else:
+                    healths[x] = 0
+                    healths[y] -= 1
+                    break
+        else:
+            s.append(x)
+    r = [x for x in healths if x]
+    return r
 
 
 p = [3, 5, 2, 6]
