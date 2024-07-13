@@ -71,7 +71,7 @@ def survived_robots_healths(positions: list[int], healths: list[int], directions
         if directions[i] == "R":
             stack.append(i)
         else:
-            while stack and directions[stack[-1]] == "R":
+            while stack and healths[i]:
                 index = stack.pop()
                 if healths[i] > healths[index]:
                     healths[index] = 0
@@ -79,11 +79,9 @@ def survived_robots_healths(positions: list[int], healths: list[int], directions
                 elif healths[i] < healths[index]:
                     healths[index] -= 1
                     healths[i] = 0
+                    stack.append(healths[index])
                 else:
                     healths[i] = healths[index] = 0
-                    
-            if healths[i]:
-                stack.append(i)
 
     return [health for health in healths if health > 0]
 
