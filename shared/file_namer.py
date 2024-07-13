@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Merge Nodes in Between Zeros"
+filename = "Robot Collisions"
 ic(format_file_name(filename))
 
-func = "mergeNodes"
+func = "survivedRobotsHealths"
 ic(camel_to_snake_case(func))
