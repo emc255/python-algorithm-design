@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Robot Collisions"
+filename = "Number of Atoms"
 ic(format_file_name(filename))
 
-func = "survivedRobotsHealths"
+func = "countOfAtoms"
 ic(camel_to_snake_case(func))
