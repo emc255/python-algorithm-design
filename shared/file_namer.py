@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Atoms"
+filename = "Create Binary Tree From Descriptions"
 ic(format_file_name(filename))
 
-func = "countOfAtoms"
+func = "createBinaryTree"
 ic(camel_to_snake_case(func))
