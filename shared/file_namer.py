@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Good Leaf Nodes Pairs"
+filename = "Find Valid Matrix Given Row and Column Sums"
 ic(format_file_name(filename))
 
-func = "countPairs"
+func = "restoreMatrix"
 ic(camel_to_snake_case(func))
