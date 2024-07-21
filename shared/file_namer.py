@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find Valid Matrix Given Row and Column Sums"
+filename = "Build a Matrix With Conditions"
 ic(format_file_name(filename))
 
-func = "restoreMatrix"
+func = "buildMatrix"
 ic(camel_to_snake_case(func))
