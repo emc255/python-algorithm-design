@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Build a Matrix With Conditions"
+filename = "Sort the Jumbled Numbers"
 ic(format_file_name(filename))
 
-func = "buildMatrix"
+func = "sortJumbled"
 ic(camel_to_snake_case(func))
