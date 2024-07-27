@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sort the Jumbled Numbers"
+filename = "Minimum Cost to Convert String I"
 ic(format_file_name(filename))
 
-func = "sortJumbled"
+func = "minimumCost"
 ic(camel_to_snake_case(func))
