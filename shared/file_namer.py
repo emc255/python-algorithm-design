@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Second Minimum Time to Reach Destination"
+filename = "Count Number of Teams"
 ic(format_file_name(filename))
 
-func = "secondMinimum"
+func = "numberTeams"
 ic(camel_to_snake_case(func))
