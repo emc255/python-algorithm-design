@@ -7,7 +7,10 @@ class ListNode:
         self.next = next_node
 
     def print(self):
+
         current = self
+        if current is None:
+            return "empty"
         print("==LIST NODE HEAD==")
         while current is not None:
             print(current.val)
