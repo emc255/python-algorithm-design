@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Range Sum of Sorted Subarray Sums"
+filename = "Minimum Number of Pushes to Type Word II"
 ic(format_file_name(filename))
 
-func = "rangeSum"
+func = "minimumPushes"
 ic(camel_to_snake_case(func))
