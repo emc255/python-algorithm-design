@@ -58,24 +58,24 @@ from icecream import ic
 
 
 def ones_minus_zeros(grid: list) -> list:
-    m, n = len(grid), len(grid[0])
-    result = [[0] * n for _ in range(m)]
-    rows_zeros = [0 for _ in range(m)]
-    rows_ones = [0 for _ in range(m)]
-    column_zeroes = [0 for _ in range(n)]
-    column_ones = [0 for _ in range(n)]
-    for i in range(m):
-        for j in range(n):
-            if grid[i][j] == 0:
-                rows_zeros[i] += 1
-                column_zeroes[j] += 1
+    R, C = len(grid), len(grid[0])
+    result = [[0] * C for _ in range(R)]
+    rows_zeros = [0 for _ in range(R)]
+    rows_ones = [0 for _ in range(R)]
+    column_zeroes = [0 for _ in range(C)]
+    column_ones = [0 for _ in range(C)]
+    for r in range(R):
+        for c in range(C):
+            if grid[r][c] == 0:
+                rows_zeros[r] += 1
+                column_zeroes[c] += 1
             else:
-                rows_ones[i] += 1
-                column_ones[j] += 1
+                rows_ones[r] += 1
+                column_ones[c] += 1
 
-    for i in range(m):
-        for j in range(n):
-            result[i][j] = rows_ones[i] + column_ones[j] - rows_zeros[i] - column_zeroes[j]
+    for r in range(R):
+        for c in range(C):
+            result[r][c] = rows_ones[r] + column_ones[c] - rows_zeros[r] - column_zeroes[c]
 
     return result
 
