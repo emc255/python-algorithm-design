@@ -1,9 +1,10 @@
 """
 70. Climbing Stairs
 
-You are climbing a staircase. It takes n steps to reach the top.
-
-Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+You are climbing a staircase.
+It takes n steps to reach the top.
+Each time you can either climb 1 or 2 steps.
+In how many distinct ways can you climb to the top?
 
 Example 1:
 Input: n = 2
@@ -25,6 +26,8 @@ Constraints:
 
 """
 
+from icecream import ic
+
 
 def climbing_stairs(n: int) -> int:
     def climb_stairs_recursive(number):
@@ -39,4 +42,4 @@ def climbing_stairs(n: int) -> int:
     return climb_stairs_recursive(n)
 
 
-print(climbing_stairs(2))
+ic(climbing_stairs(2))

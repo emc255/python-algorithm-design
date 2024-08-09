@@ -1,5 +1,4 @@
 """
-
 203. Remove Linked List Elements
 
 Given the head of a linked list and an integer val,

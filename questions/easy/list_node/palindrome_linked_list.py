@@ -21,6 +21,8 @@ Follow up: Could you do it in O(n) time and O(1) space?
 """
 from typing import Optional
 
+from icecream import ic
+
 from shared.commons import ListNode, LinkedList
 
 
@@ -62,5 +64,5 @@ def is_palindrome_v2(head: Optional[ListNode]) -> bool:
 
 nodes = LinkedList([1, 2, 3, 4, 2, 1]).head
 
-print(is_palindrome(nodes))
-print(is_palindrome_v2(nodes))
+ic(is_palindrome(nodes))
+ic(is_palindrome_v2(nodes))

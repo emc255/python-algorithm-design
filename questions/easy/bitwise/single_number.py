@@ -23,6 +23,7 @@ Constraints:
 Each element in the array appears twice except for one element which appears only once.
 
 """
+from icecream import ic
 
 
 def single_number(nums: list) -> int:
@@ -32,6 +33,6 @@ def single_number(nums: list) -> int:
     return ans
 
 
-print(single_number([2, 2, 1]))
-print(single_number([4, 1, 2, 1, 2, 4, 6, 7, 7]))
-print(single_number([1, 0, 1]))
+ic(single_number([2, 2, 1]))
+ic(single_number([4, 1, 2, 1, 2, 4, 6, 7, 7]))
+ic(single_number([1, 0, 1]))

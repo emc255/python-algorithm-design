@@ -17,6 +17,7 @@ Constraints:
 1 <= numRows <= 30
 
 """
+from icecream import ic
 
 
 def generate(number_rows: int) -> list:
@@ -32,4 +33,4 @@ def generate(number_rows: int) -> list:
     return result
 
 
-print(generate(5))
+ic(generate(5))

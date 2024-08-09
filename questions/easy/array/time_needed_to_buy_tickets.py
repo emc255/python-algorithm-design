@@ -1,5 +1,5 @@
 """
-Time Needed to Buy Tickets
+2073. Time Needed to Buy Tickets
 
 There are n people in a line queuing to buy tickets,
 where the 0th person is at the front of the line

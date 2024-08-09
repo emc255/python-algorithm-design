@@ -1,5 +1,5 @@
 """
-Sum of All Subset XOR Totals
+1863. Sum of All Subset XOR Totals
 
 The XOR total of an array is defined as the bitwise XOR of all its elements,
 or 0 if the array is empty.

@@ -1,5 +1,5 @@
 """
-Largest Substring Between Two Equal Characters
+1624. Largest Substring Between Two Equal Characters
 
 Given a string s,
 return the length of the longest substring between two equal characters,
@@ -44,5 +44,5 @@ def max_length_between_equal_characters(s: str) -> int:
     return counter
 
 
-# ic(max_length_between_equal_characters("adddcabca"))
+ic(max_length_between_equal_characters("adddcabca"))
 ic(max_length_between_equal_characters("mgntdygtxrvxjnwksqhxuxtrv"))

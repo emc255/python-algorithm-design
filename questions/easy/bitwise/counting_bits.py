@@ -33,6 +33,7 @@ Can you do it in linear time O(n) and possibly in a single pass?
 Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?
 
 """
+from icecream import ic
 
 
 def count_bits(n: int) -> list:
@@ -48,13 +49,8 @@ def count_bits(n: int) -> list:
 
 
 """
-
 0   1   10
 0   1   1
-
-
-
-
 
 """
 
@@ -72,4 +68,4 @@ def count_bits_v2(n: int) -> list:
     return result
 
 
-print(count_bits(5))
+ic(count_bits(5))

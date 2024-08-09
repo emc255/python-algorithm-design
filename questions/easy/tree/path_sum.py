@@ -33,6 +33,8 @@ The number of nodes in the tree is in the range [0, 5000].
 """
 from typing import Optional
 
+from icecream import ic
+
 from shared.commons import TreeNode
 
 
@@ -56,4 +58,4 @@ head.left = TreeNode(2)
 head.right = TreeNode(3)
 head.right.left = TreeNode(2)
 
-print(has_path_sum(head, 6))
+ic(has_path_sum(head, 6))

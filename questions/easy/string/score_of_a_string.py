@@ -1,5 +1,5 @@
 """
-Score of a String
+3110. Score of a String
 
 You are given a string s.
 The score of a string is defined as the sum of the absolute difference

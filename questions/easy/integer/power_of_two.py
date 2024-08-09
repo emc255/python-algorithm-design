@@ -25,6 +25,7 @@ Constraints:
 Follow up: Could you solve it without loops/recursion?
 
 """
+from icecream import ic
 
 
 def is_power_of_two(n: int) -> bool:
@@ -44,7 +45,6 @@ def is_power_of(n: int) -> bool:
     return n == 1
 
 
-print(is_power_of_two(16))
-print(is_power_of_two(15))
-
-print(is_power_of(81))
+ic(is_power_of_two(16))
+ic(is_power_of_two(15))
+ic(is_power_of(81))

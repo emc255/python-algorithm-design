@@ -25,6 +25,7 @@ Constraints:
 -105 <= nums[i] <= 105
 
 """
+from icecream import ic
 
 
 def is_monotonic(nums: list) -> bool:
@@ -85,8 +86,8 @@ def is_monotonic_v3(nums):
     return True
 
 
-print(is_monotonic([1, 3, 2]))
-print(is_monotonic([1, 2, 2, 3]))
+ic(is_monotonic([1, 3, 2]))
+ic(is_monotonic([1, 2, 2, 3]))
 
-print(is_monotonic_v2([1, 3, 2]))
-print(is_monotonic_v2([1, 2, 2, 3]))
+ic(is_monotonic_v2([1, 3, 2]))
+ic(is_monotonic_v2([1, 2, 2, 3]))

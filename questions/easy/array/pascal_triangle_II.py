@@ -23,6 +23,7 @@ Constraints:
 Follow up: Could you optimize your algorithm to use only O(rowIndex) extra space?
 
 """
+from icecream import ic
 
 
 def get_row(row_index: int) -> list:
@@ -38,4 +39,4 @@ def get_row(row_index: int) -> list:
     return result[-1]
 
 
-print(get_row(1))
+ic(get_row(1))

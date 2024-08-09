@@ -22,6 +22,7 @@ Input: s = "(]"
 Output: false
 
 """
+from icecream import ic
 
 
 def is_valid(s: str) -> bool:
@@ -40,4 +41,4 @@ def is_valid(s: str) -> bool:
     return not stack
 
 
-print(is_valid("(()[]{})"))
+ic(is_valid("(()[]{})"))

@@ -46,6 +46,7 @@ Constraints:
 nums is sorted in non-decreasing order.
 
 """
+from icecream import ic
 
 
 def remove_duplicates(nums: list) -> int:
@@ -55,10 +56,10 @@ def remove_duplicates(nums: list) -> int:
         if nums[slow] == nums[fast]:
             fast += 1
         else:
-            nums[slow + 1] = nums[fast]
             slow += 1
+            nums[slow] = nums[fast]
 
     return slow + 1
 
 
-print(remove_duplicates([1, 2, 2, 3]))
+ic(remove_duplicates([1, 2, 2, 3]))

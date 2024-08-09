@@ -22,6 +22,8 @@ The number of nodes in the tree is in the range [0, 5000].
 """
 from typing import Optional
 
+from icecream import ic
+
 from shared.commons import TreeNode
 
 
@@ -48,4 +50,4 @@ head.left.left = TreeNode(3)
 head.left.right = TreeNode(3)
 head.left.left.left = TreeNode(4)
 head.left.left.right = TreeNode(4)
-print(is_balanced(head))
+ic(is_balanced(head))

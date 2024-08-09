@@ -1,5 +1,5 @@
 """
-Redistribute Characters to Make All Strings Equal
+1897. Redistribute Characters to Make All Strings Equal
 
 You are given an array of strings words (0-indexed).
 

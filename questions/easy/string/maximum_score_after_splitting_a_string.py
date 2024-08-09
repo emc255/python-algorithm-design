@@ -1,5 +1,5 @@
 """
-Maximum Score After Splitting a String
+1422. Maximum Score After Splitting a String
 
 Given a string s of zeros and ones,
 return the maximum score after splitting the string

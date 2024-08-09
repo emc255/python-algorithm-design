@@ -28,6 +28,8 @@ There will be at least one word in s.
 """
 import re
 
+from icecream import ic
+
 
 def length_of_last_word(s: str) -> int:
     """
@@ -36,5 +38,5 @@ def length_of_last_word(s: str) -> int:
     return len(re.findall(r'\S+', s)[-1])
 
 
-print(length_of_last_word("luffy is still joyboy"))
-print(length_of_last_word("   fly me   to   the moon  "))
+ic(length_of_last_word("luffy is still joyboy"))
+ic(length_of_last_word("   fly me   to   the moon  "))

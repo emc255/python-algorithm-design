@@ -24,6 +24,8 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
 """
 from collections import Counter
 
+from icecream import ic
+
 
 def is_anagram(s: str, t: str) -> bool:
     if len(s) != len(t):
@@ -53,7 +55,6 @@ def is_anagram_v3(s: str, t: str) -> bool:
     return Counter(s) == Counter(t)
 
 
-print(is_anagram("anagram", "nagaram"))
-
-print(is_anagram_v2("anagram", "nagaram"))
-print(is_anagram_v3("anagram", "nagaram"))
+ic(is_anagram("anagram", "nagaram"))
+ic(is_anagram_v2("anagram", "nagaram"))
+ic(is_anagram_v3("anagram", "nagaram"))

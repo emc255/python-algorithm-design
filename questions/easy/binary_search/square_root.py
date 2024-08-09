@@ -1,5 +1,6 @@
 """
 69. Sqrt(x)
+
 Given a non-negative integer x,
 return the square root of x rounded down to the nearest integer.
 The returned integer should be non-negative as well.
@@ -24,6 +25,7 @@ Constraints:
 0 <= x <= 231 - 1
 
 """
+from icecream import ic
 
 
 def square_root(x: int) -> int:
@@ -41,8 +43,8 @@ def square_root(x: int) -> int:
     return low - 1
 
 
-print(square_root(3))
-print(square_root(4))
-print(square_root(8))
-print(square_root(9))
-print(square_root(25343))
+ic(square_root(3))
+ic(square_root(4))
+ic(square_root(8))
+ic(square_root(9))
+ic(square_root(25343))

@@ -7,7 +7,6 @@ the beginning of the array followed by all the odd integers.
 Return any array that satisfies this condition.
 
 Example 1:
-
 Input: nums = [3,1,2,4]
 Output: [2,4,3,1]
 Explanation: The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
@@ -21,6 +20,7 @@ Constraints:
 0 <= nums[i] <= 5000
 
 """
+from icecream import ic
 
 
 def sort_array_by_parity(nums: list) -> list:
@@ -64,10 +64,7 @@ def sort_array_by_parity_v2(nums: list) -> list:
     return nums
 
 
-print(sort_array_by_parity([6, 3, 1, 4, 2, 8]))
-
-print(sort_array_by_parity([1, 1, 2, 2, 3, 1]))
-
-print(sort_array_by_parity_v2([6, 3, 1, 4, 2, 8]))
-
-print(sort_array_by_parity_v2([1, 1, 2, 2, 3, 1]))
+ic(sort_array_by_parity([6, 3, 1, 4, 2, 8]))
+ic(sort_array_by_parity([1, 1, 2, 2, 3, 1]))
+ic(sort_array_by_parity_v2([6, 3, 1, 4, 2, 8]))
+ic(sort_array_by_parity_v2([1, 1, 2, 2, 3, 1]))

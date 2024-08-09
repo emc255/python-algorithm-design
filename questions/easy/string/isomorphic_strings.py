@@ -27,6 +27,7 @@ t.length == s.length
 s and t consist of any valid ascii character.
 
 """
+from icecream import ic
 
 
 def is_isomorphic(s: str, t: str) -> bool:
@@ -65,12 +66,12 @@ def is_isomorphic_v2(s: str, t: str) -> bool:
     return True
 
 
-print(is_isomorphic("egg", "add"))
-print(is_isomorphic("paper", "title"))
-print(is_isomorphic("Foo", "bar"))
-print(is_isomorphic("badc", "baba"))
+ic(is_isomorphic("egg", "add"))
+ic(is_isomorphic("paper", "title"))
+ic(is_isomorphic("Foo", "bar"))
+ic(is_isomorphic("badc", "baba"))
 
-print(is_isomorphic_v2("egg", "add"))
-print(is_isomorphic_v2("paper", "title"))
-print(is_isomorphic_v2("Foo", "bar"))
-print(is_isomorphic_v2("badc", "baba"))
+ic(is_isomorphic_v2("egg", "add"))
+ic(is_isomorphic_v2("paper", "title"))
+ic(is_isomorphic_v2("Foo", "bar"))
+ic(is_isomorphic_v2("badc", "baba"))

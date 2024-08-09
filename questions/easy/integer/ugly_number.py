@@ -24,6 +24,7 @@ Constraints:
 -231 <= n <= 231 - 1
 
 """
+from icecream import ic
 
 
 def is_ugly(n: int) -> bool:
@@ -40,5 +41,5 @@ def is_ugly(n: int) -> bool:
     return True
 
 
-print(is_ugly(14))
-print(is_ugly(6))
+ic(is_ugly(14))
+ic(is_ugly(6))

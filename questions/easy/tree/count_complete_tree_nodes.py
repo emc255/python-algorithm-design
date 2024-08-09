@@ -29,6 +29,8 @@ The tree is guaranteed to be complete.
 """
 from typing import Optional
 
+from icecream import ic
+
 from shared.commons import TreeNode
 
 
@@ -60,5 +62,5 @@ head.left.left = TreeNode(4)
 head.left.right = TreeNode(5)
 head.right.left = TreeNode(6)
 
-print(count_nodes(head))
-print(count_nodes_v2(head))
+ic(count_nodes(head))
+ic(count_nodes_v2(head))

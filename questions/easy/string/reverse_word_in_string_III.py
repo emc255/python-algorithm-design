@@ -21,6 +21,7 @@ There is at least one word in s.
 All the words in s are separated by a single space.
 
 """
+from icecream import ic
 
 
 def reverse_words(s: str) -> str:
@@ -35,5 +36,5 @@ def reverse_words_v2(s: str) -> str:
     return " ".join(word[::-1] for word in s.split())
 
 
-print(reverse_words("Let's take LeetCode contest"))
-print(reverse_words_v2("Let's take LeetCode contest"))
+ic(reverse_words("Let's take LeetCode contest"))
+ic(reverse_words_v2("Let's take LeetCode contest"))

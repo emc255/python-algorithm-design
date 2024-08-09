@@ -1,5 +1,5 @@
 """
-Special Array With X Elements Greater Than or Equal X
+1608. Special Array With X Elements Greater Than or Equal X
 
 You are given an array nums of non-negative integers.
 nums is considered special if there exists a number x such
@@ -28,7 +28,6 @@ Example 3:
 Input: nums = [0,4,3,0,4]
 Output: 3
 Explanation: There are 3 values that are greater than or equal to 3.
-
 
 Constraints:
 1 <= nums.length <= 100

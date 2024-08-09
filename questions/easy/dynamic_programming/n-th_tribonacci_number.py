@@ -1,5 +1,5 @@
 """
-N-th Tribonacci Number
+1137. N-th Tribonacci Number
 
 The Tribonacci sequence Tn is defined as follows:
 T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n >= 0.
@@ -25,10 +25,7 @@ from icecream import ic
 
 
 def tri_fibonacci(n: int) -> int:
-    def fibonacci(number, memoize):
-        if memoize is None:
-            memoize = {}
-
+    def fibonacci(number):
         if number in memoize:
             return memoize[number]
 
@@ -39,12 +36,11 @@ def tri_fibonacci(n: int) -> int:
         if number == 1 or number == 2:
             return 1
 
-        memoize[number] = fibonacci(number - 1, memoize) + fibonacci(number - 2, memoize) + fibonacci(number - 3,
-                                                                                                      memoize)
+        memoize[number] = fibonacci(number - 1) + fibonacci(number - 2) + fibonacci(number - 3)
         return memoize[number]
 
     memoize = {}
-    return fibonacci(n, memoize)
+    return fibonacci(n)
 
 
 def tri_fibonacci_v2(n: int) -> int:

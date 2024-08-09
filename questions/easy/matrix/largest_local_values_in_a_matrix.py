@@ -1,5 +1,5 @@
 """
-Largest Local Values in a Matrix
+2373. Largest Local Values in a Matrix
 
 You are given an n x n integer matrix grid.
 Generate an integer matrix maxLocal of size (n - 2) x (n - 2) such that:
@@ -45,7 +45,6 @@ def largest_local(grid: list[list[int]]) -> list[list[int]]:
                 grid[i][j - 1], grid[i][j], grid[i][j + 1],
                 grid[i + 1][j - 1], grid[i + 1][j], grid[i + 1][j + 1]
             ]
-        
             max_local_row.append(max(sub_matrix))
 
         max_local.append(max_local_row)

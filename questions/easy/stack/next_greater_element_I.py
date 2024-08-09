@@ -1,5 +1,5 @@
 """
-Next Greater Element I
+496. Next Greater Element I
 
 The next greater element of some element x in an array is
 the first greater element that is to the right of x in the same array.
@@ -49,11 +49,8 @@ def next_greater_element(nums1: list[int], nums2: list[int]) -> list[int]:
         while stk and stk[-1] < i:
             grt_dic[stk.pop()] = i
         stk.append(i)
-    ic(stk)
-    ic(grt_dic)
     while stk:
         grt_dic[stk.pop()] = -1
-    ic(grt_dic)
     ret = [grt_dic[i] for i in nums1]
     return ret
 

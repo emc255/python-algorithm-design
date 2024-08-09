@@ -24,9 +24,24 @@ Constraints:
 1 <= nums[i] <= 100
 
 """
+from collections import defaultdict
+
+from icecream import ic
 
 
 def number_identical_pairs(nums: list) -> int:
+    pairs = defaultdict(int)
+    result = 0
+
+    for num in nums:
+        if num in pairs:
+            result += pairs[num]
+        pairs[num] += 1
+
+    return result
+
+
+def number_identical_pairs_v2(nums: list) -> int:
     pairs = set()
     left = 0
     right = 1
@@ -42,24 +57,10 @@ def number_identical_pairs(nums: list) -> int:
     return len(pairs)
 
 
-def number_identical_pairs_v2(nums: list) -> int:
-    pairs = {}
-    result = 0
+ic(number_identical_pairs([1, 2, 3, 1, 1, 3]))
+ic(number_identical_pairs([1, 1, 1, 1]))
+ic(number_identical_pairs([1, 2, 3]))
 
-    for num in nums:
-        if num in pairs:
-            result += pairs[num]
-            pairs[num] += 1
-        else:
-            pairs[num] = 1
-
-    return result
-
-
-print(number_identical_pairs([1, 2, 3, 1, 1, 3]))
-print(number_identical_pairs([1, 1, 1, 1]))
-print(number_identical_pairs([1, 2, 3]))
-
-print(number_identical_pairs_v2([1, 2, 3, 1, 1, 3]))
-print(number_identical_pairs_v2([1, 1, 1, 1]))
-print(number_identical_pairs_v2([1, 2, 3]))
+ic(number_identical_pairs_v2([1, 2, 3, 1, 1, 3]))
+ic(number_identical_pairs_v2([1, 1, 1, 1]))
+ic(number_identical_pairs_v2([1, 2, 3]))

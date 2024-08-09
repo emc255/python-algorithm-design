@@ -43,6 +43,7 @@ nums2.length == n
 Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 """
+from icecream import ic
 
 """
 do it backwardse
@@ -77,6 +78,6 @@ def merge(nums1: list, m: int, nums2: list, n: int) -> None:
             starting_index += 1
 
 
-print(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3))
-print(merge([1], 1, [0], 0))
-print(merge([0], 0, [1], 1))
+ic(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3))
+ic(merge([1], 1, [0], 0))
+ic(merge([0], 0, [1], 1))

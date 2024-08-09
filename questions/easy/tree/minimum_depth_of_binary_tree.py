@@ -23,6 +23,8 @@ The number of nodes in the tree is in the range [0, 105].
 """
 from typing import Optional
 
+from icecream import ic
+
 from shared.commons import TreeNode
 
 
@@ -46,4 +48,4 @@ head.right.right.right = TreeNode(5)
 head.right.right.right.right = TreeNode(6)
 head.right.right.right.right = TreeNode(6)
 
-print(minimum_depth(head))
+ic(minimum_depth(head))

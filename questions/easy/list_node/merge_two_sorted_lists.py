@@ -22,6 +22,8 @@ Output: [0]
 """
 from typing import Optional
 
+from icecream import ic
+
 from shared.commons import LinkedList, ListNode
 
 
@@ -44,4 +46,4 @@ def merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Opt
 l1 = LinkedList([1, 2, 4]).head
 l2 = LinkedList([1, 3, 4]).head
 
-print(merge_two_lists(l1, l2).print())
+ic(merge_two_lists(l1, l2).print())

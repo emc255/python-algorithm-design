@@ -1,5 +1,5 @@
 """
-Set Mismatch
+645. Set Mismatch
 
 You have a set of integers s,
 which originally contains all the numbers from 1 to n.
@@ -30,10 +30,10 @@ from icecream import ic
 
 
 def find_error_nums(nums: list[int]) -> list[int]:
-    n = len(nums)
+    N = len(nums)
     x = 0
     y = 0
-    for i in range(1, n + 1):
+    for i in range(1, N + 1):
         x += nums[i - 1] - i
         y += nums[i - 1] ** 2 - i ** 2
     missing = (y - x ** 2) // (2 * x)
