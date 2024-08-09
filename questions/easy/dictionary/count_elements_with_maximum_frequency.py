@@ -1,5 +1,5 @@
 """
-Count Elements With Maximum Frequency
+3005. Count Elements With Maximum Frequency
 
 You are given an array nums consisting of positive integers.
 
@@ -11,15 +11,15 @@ The frequency of an element is the number of occurrences of that element in the 
 Example 1:
 Input: nums = [1,2,2,3,1,4]
 Output: 4
-Explanation: The elements 1 and 2 have a frequency of 2
-which is the maximum frequency in the array.
+Explanation:
+The elements 1 and 2 have a frequency of 2 which is the maximum frequency in the array.
 So the number of elements in the array with maximum frequency is 4.
 
 Example 2:
 Input: nums = [1,2,3,4,5]
 Output: 5
-Explanation: All elements of the array
-have a frequency of 1 which is the maximum.
+Explanation:
+All elements of the array have a frequency of 1 which is the maximum.
 So the number of elements in the array with maximum frequency is 5.
 
 Constraints:
@@ -36,7 +36,7 @@ def max_frequency_elements(nums: list[int]) -> int:
     counter_nums = Counter(nums)
     if len(counter_nums) == len(nums):
         return len(nums)
- 
+
     frequency = sorted(counter_nums.values(), reverse=True)
     total_frequency = frequency[0]
     index = 1

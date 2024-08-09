@@ -1,5 +1,5 @@
 """
-Find Common Characters
+1002. Find Common Characters
 
 Given a string array words, return an array of all characters
 that show up in all strings within the words (including duplicates).
@@ -31,7 +31,6 @@ def common_chars(words: list[str]) -> list[str]:
     for word in words[1:]:
         # Create a counter for the current word
         current_count = Counter(word)
-        ic(current_count)
         # Intersect the result counter with the current word's counter
         result &= current_count
 
