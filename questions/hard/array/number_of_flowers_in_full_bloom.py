@@ -31,6 +31,8 @@ flowers[i].length == 2
 """
 from collections import defaultdict
 
+from icecream import ic
+
 
 def full_bloom_flowers(flowers: list, people: list) -> list:
     blooms = {}
@@ -69,7 +71,6 @@ def full_bloom_flowers_v2(flowers: list, people: list) -> list:
     return [result[p] if p in result else 0 for p in people]
 
 
-# print(full_bloom_flowers([[1, 6], [3, 7], [9, 12], [4, 13]], [2, 3, 7, 11]))
-# print(full_bloom_flowers([[1, 10], [3, 3]], [3, 3, 2]))
-
-print(full_bloom_flowers_v2([[1, 6], [3, 7], [9, 12], [4, 13]], [2, 3, 7, 11]))
+ic(full_bloom_flowers([[1, 6], [3, 7], [9, 12], [4, 13]], [2, 3, 7, 11]))
+ic(full_bloom_flowers([[1, 10], [3, 3]], [3, 3, 2]))
+ic(full_bloom_flowers_v2([[1, 6], [3, 7], [9, 12], [4, 13]], [2, 3, 7, 11]))

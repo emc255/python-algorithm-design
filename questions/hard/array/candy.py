@@ -26,6 +26,7 @@ n == ratings.length
 0 <= ratings[i] <= 2 * 104
 
 """
+from icecream import ic
 
 
 def candy(ratings: list) -> int:
@@ -41,6 +42,6 @@ def candy(ratings: list) -> int:
     return sum(candies)
 
 
-print(candy([1, 0, 2]))
-print(candy([1, 2, 2]))
-print(candy([1, 2, 87, 87, 87, 2, 1]))
+ic(candy([1, 0, 2]))
+ic(candy([1, 2, 2]))
+ic(candy([1, 2, 87, 87, 87, 2, 1]))

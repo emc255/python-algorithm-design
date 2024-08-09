@@ -1,5 +1,5 @@
 """
-Minimum Cost to Hire K Workers
+857. Minimum Cost to Hire K Workers
 
 There are n workers. You are given two integer arrays quality
 and wage where quality[i] is the quality of the ith worker

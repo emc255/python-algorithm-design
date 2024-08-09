@@ -1,5 +1,5 @@
 """
-Number of Atoms
+726. Number of Atoms
 
 Given a string formula representing a chemical formula,
 return the count of each atom.

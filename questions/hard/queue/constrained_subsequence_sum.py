@@ -49,5 +49,5 @@ def constrained_subset_sum(nums: list, k: int) -> int:
     return max(nums)
 
 
-# ic(constrained_subset_sum([10, 2, -10, 5, 20], 2))
+ic(constrained_subset_sum([10, 2, -10, 5, 20], 2))
 ic(constrained_subset_sum([10, -2, -10, -5, 20], 2))

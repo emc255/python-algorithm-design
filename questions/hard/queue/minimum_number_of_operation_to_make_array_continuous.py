@@ -38,6 +38,8 @@ Constraints:
 """
 from collections import deque
 
+from icecream import ic
+
 
 def minimum_operations(nums: list) -> int:
     n = len(nums)
@@ -54,5 +56,5 @@ def minimum_operations(nums: list) -> int:
     return n - max_length
 
 
-print(minimum_operations([4, 2, 5, 3]))
-print(minimum_operations([1, 2, 3, 5, 6]))
+ic(minimum_operations([4, 2, 5, 3]))
+ic(minimum_operations([1, 2, 3, 5, 6]))

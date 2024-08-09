@@ -1,5 +1,5 @@
 """
-Patching Array
+330. Patching Array
 
 Given a sorted integer array nums and an integer n,
 add/patch elements to the array such that any number in the range [1, n]

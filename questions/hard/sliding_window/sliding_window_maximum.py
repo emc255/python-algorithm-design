@@ -1,5 +1,6 @@
 """
 239. Sliding Window Maximum
+
 You are given an array of integers nums,
 there is a sliding window of size k which is moving from
 the very left of the array to the very right.
@@ -34,6 +35,8 @@ Constraints:
 """
 from collections import deque
 
+from icecream import ic
+
 
 def max_sliding_window(nums: list, k: int) -> list:
     result = []
@@ -53,4 +56,4 @@ def max_sliding_window(nums: list, k: int) -> list:
     return result
 
 
-print(max_sliding_window([1, 3, -1, -3, 5, 3, 6, 7], 3))
+ic(max_sliding_window([1, 3, -1, -3, 5, 3, 6, 7], 3))

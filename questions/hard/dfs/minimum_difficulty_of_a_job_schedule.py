@@ -1,5 +1,5 @@
 """
-Minimum Difficulty of a Job Schedule
+1335. Minimum Difficulty of a Job Schedule
 
 You want to schedule a list of jobs in d days.
 Jobs are dependent (i.e To work on the ith job, you have to finish all the jobs j where 0 <= j < i).

@@ -1,5 +1,5 @@
 """
-Maximum Score Words Formed by Letters
+1255. Maximum Score Words Formed by Letters
 
 Given a list of words,
 list of  single letters (might be repeating) and score of every character.

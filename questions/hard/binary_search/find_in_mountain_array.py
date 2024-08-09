@@ -35,6 +35,8 @@ Constraints:
 0 <= mountain_arr.get(index) <= 109
 
 """
+from icecream import ic
+
 from shared.commons import MountainArray
 
 
@@ -86,5 +88,5 @@ def find_in_mountain_array(target: int, mountain_arr: 'MountainArray') -> int:
     return -1
 
 
-print(find_in_mountain_array(3, MountainArray([1, 2, 3, 4, 5, 3, 1])))
-print(find_in_mountain_array(5, MountainArray([1, 2, 3, 8, 5, 3, 1])))
+ic(find_in_mountain_array(3, MountainArray([1, 2, 3, 4, 5, 3, 1])))
+ic(find_in_mountain_array(5, MountainArray([1, 2, 3, 8, 5, 3, 1])))

@@ -1,5 +1,5 @@
 """
-IPO
+502. IPO
 
 Suppose LeetCode will start its IPO soon.
 In order to sell a good price of its shares to Venture Capital,

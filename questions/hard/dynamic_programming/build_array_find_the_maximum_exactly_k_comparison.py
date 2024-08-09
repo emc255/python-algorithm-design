@@ -34,6 +34,7 @@ Constraints:
 0 <= k <= n
 
 """
+from icecream import ic
 
 
 def num_of_arrays(n: int, m: int, k: int) -> int:
@@ -67,5 +68,5 @@ def num_of_arrays(n: int, m: int, k: int) -> int:
     return prefix[m][k]
 
 
-print(num_of_arrays(2, 3, 1))
-print(num_of_arrays(5, 2, 3))
+ic(num_of_arrays(2, 3, 1))
+ic(num_of_arrays(5, 2, 3))
