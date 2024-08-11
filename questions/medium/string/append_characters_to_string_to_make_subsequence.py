@@ -10,8 +10,6 @@ A subsequence is a string that can be derived from
 another string by deleting some or no characters
 without changing the order of the remaining characters.
 
-
-
 Example 1:
 Input: s = "coaching", t = "coding"
 Output: 4
@@ -40,6 +38,7 @@ Constraints:
 s and t consist only of lowercase English letters.
 
 """
+
 from icecream import ic
 
 

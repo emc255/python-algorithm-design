@@ -1,5 +1,5 @@
 """
-Minimum Number of Steps to Make Two Strings Anagram
+1347. Minimum Number of Steps to Make Two Strings Anagram
 
 You are given two strings of the same length s and t.
 In one step you can choose any character of t
@@ -58,7 +58,7 @@ def min_steps_v2(s: str, t: str) -> int:
     counter_t = Counter(t)
 
     diff = counter_s - counter_t
-    
+
     return sum(diff.values())
 
 

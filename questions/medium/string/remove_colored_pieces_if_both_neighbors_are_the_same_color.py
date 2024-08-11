@@ -56,8 +56,10 @@ Constraints:
 colors consists of only the letters 'A' and 'B'
 
 """
-import collections
+from collections import Counter
 from itertools import groupby
+
+from icecream import ic
 
 
 def winner_of_game(colors: str) -> bool:
@@ -93,7 +95,7 @@ def winner_of_game(colors: str) -> bool:
 
 
 def winner_of_game_v2(colors: str) -> bool:
-    c = collections.Counter()
+    c = Counter()
 
     for x, t in groupby(colors):
         c[x] += max(len(list(t)) - 2, 0)
@@ -104,10 +106,11 @@ def winner_of_game_v2(colors: str) -> bool:
     return False
 
 
-print(winner_of_game("AAABABB"))
-print(winner_of_game("ABBBBBBBAAA"))
-print(winner_of_game("AA"))
-print(winner_of_game("AAAABBBB"))
-print(winner_of_game("BBAAABBABBABB"))
+ic(winner_of_game("AAABABB"))
+ic(winner_of_game("ABBBBBBBAAA"))
+ic(winner_of_game("AA"))
+ic(winner_of_game("AAAABBBB"))
+ic(winner_of_game("BBAAABBABBABB"))
 
-print(winner_of_game_v2("BBAAABBABBABB"))
+ic(winner_of_game_v2("BBAAABBABBABB"))
+ic(winner_of_game_v2("AAABABB"))

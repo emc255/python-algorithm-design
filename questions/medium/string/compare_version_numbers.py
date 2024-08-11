@@ -1,5 +1,5 @@
 """
-Compare Version Numbers
+165. Compare Version Numbers
 
 Given two version numbers, version1 and version2, compare them.
 
@@ -111,4 +111,4 @@ def compare_version_v2(version1: str, version2: str) -> int:
 
 
 ic(compare_version("1.01", "1.001"))
-ic(compare_version("o.1", "1.0"))
+ic(compare_version("0.1", "1.0"))

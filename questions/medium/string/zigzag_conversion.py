@@ -40,18 +40,29 @@ from icecream import ic
 
 
 def convert(s: str, num_rows: int) -> str:
+    # If there's only one row, the zigzag pattern is just the original string.
     if num_rows == 1:
         return s
 
-    result = ""
+    result = ""  # This will hold the final zigzag-converted string.
+
+    # Iterate over each row in the zigzag pattern.
     for r in range(num_rows):
+        # The 'increment' is the distance between characters in the same column.
         increment = 2 * (num_rows - 1)
 
+        # Start iterating over the string from the current row's start point.
         for i in range(r, len(s), increment):
+            # Add the character from the current column of the zigzag pattern.
             result += s[i]
-            middle_increment = i + increment - 2 * r
+
+            # Calculate the index of the character in the middle of the zigzag.
+            middle_increment = i + increment - (2 * r)
+
+            # For all rows except the first and last, add the middle character.
             if 0 < r < num_rows - 1 and middle_increment < len(s):
                 result += s[middle_increment]
+
     return result
 
 

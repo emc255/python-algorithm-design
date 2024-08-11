@@ -53,7 +53,6 @@ def count_palindromic_subsequence(s: str) -> int:
         between = set()
         for i in range(l + 1, r):
             between.add(s[i])
-
         result += len(between)
 
     return result

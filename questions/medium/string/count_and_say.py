@@ -53,4 +53,4 @@ def count_and_say(n: int) -> str:
     return result
 
 
-ic(count_and_say(2))
+ic(count_and_say(4))

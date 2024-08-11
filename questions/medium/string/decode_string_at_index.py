@@ -35,6 +35,7 @@ It is guaranteed that k is less than or equal to the length of the decoded strin
 The decoded string is guaranteed to have less than 263 letters.
 
 """
+from icecream import ic
 
 
 def decode_at_index(s: str, k: int) -> str:
@@ -59,6 +60,6 @@ def decode_at_index(s: str, k: int) -> str:
             length -= 1
 
 
-print(decode_at_index("leet2code3", 10))
-print(decode_at_index("a2345678999999999999999", 1))
-print(decode_at_index("a23", 6))
+ic(decode_at_index("leet2code3", 10))
+ic(decode_at_index("a2345678999999999999999", 1))
+ic(decode_at_index("a23", 6))
