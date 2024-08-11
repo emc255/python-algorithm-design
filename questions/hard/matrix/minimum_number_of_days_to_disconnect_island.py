@@ -43,39 +43,41 @@ from icecream import ic
 
 
 def minimum_days(grid: list[list[int]]) -> int:
-    def dfs(row, col):
-        if row < 0 or col < 0 or row == R or col == C or grid[row][col] == 0 or (row, col) in visited:
+    def dfs(row, col, visit):
+        if row < 0 or col < 0 or row == R or col == C or grid[row][col] == 0 or (row, col) in visit:
             return
-        visited.add((row, col))
+        visit.add((row, col))
         directions = [[1, 0], [0, 1], [-1, 0], [0, -1]]
         for dr, dc in directions:
-            dfs(row + dr, col + dc)
+            dfs(row + dr, col + dc, visit)
 
-    R, C = len(grid), len(grid[0])
-    visited = set()
-    count = 0
-    for r in range(R):
-        for c in range(C):
-            if grid[r][c] and (r, c) not in visited:
-                dfs(r, c)
-                count += 1
-    if count == 0 or count > 1:
-        return 0
-
-    land = list(visited)
-    for i, j in land:
-        grid[i][j] = 0
+    def count_island():
         visited = set()
         count = 0
         for r in range(R):
             for c in range(C):
                 if grid[r][c] and (r, c) not in visited:
-                    dfs(r, c)
+                    dfs(r, c, visited)
                     count += 1
-        if count != 1:
-            return 1
-        grid[i][j] = 1
+        return count
+
+    R, C = len(grid), len(grid[0])
+
+    if count_island() != 1:
+        return 0
+
+    for i in range(R):
+        for j in range(C):
+            if grid[i][j] == 0:
+                continue
+
+            grid[i][j] = 0
+            if count_island() != 1:
+                return 1
+
+            grid[i][j] = 1
     return 2
 
 
 ic(minimum_days([[0, 1, 1, 0], [0, 1, 1, 0], [0, 0, 0, 0]]))
+ic(minimum_days([[1, 0]]))
