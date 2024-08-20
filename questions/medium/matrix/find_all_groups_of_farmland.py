@@ -1,8 +1,8 @@
 """
 Find All Groups of Farmland
 
-You are given a 0-indexed m x n binary matrix land w
-here a 0 represents a hectare of forested land and a 1 represents a hectare of farmland.
+You are given a 0-indexed m x n binary matrix land
+where a 0 represents a hectare of forested land and a 1 represents a hectare of farmland.
 
 To keep the land organized, there are designated rectangular areas of hectares
 that consist entirely of farmland. These rectangular areas are called groups.
