@@ -4,7 +4,7 @@
 Alice and Bob continue their games with piles of stones.
 There are a number of piles arranged in a row,
 and each pile has a positive integer number of stones piles[i].
-The obiective of the game is to end with the most stones.
+The objective of the game is to end with the most stones.
 
 Alice and Bob take turns, with Alice starting first. Initially, m = 1.
 
@@ -34,6 +34,7 @@ Constraints:
 1 <= piles[i] <= 104
 
 """
+
 from icecream import ic
 
 
