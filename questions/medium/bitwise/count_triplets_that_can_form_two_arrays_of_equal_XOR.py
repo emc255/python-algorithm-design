@@ -1,5 +1,5 @@
 """
-Count Triplets That Can Form Two Arrays of Equal XOR
+1442. Count Triplets That Can Form Two Arrays of Equal XOR
 
 Given an array of integers arr.
 We want to select three indices i, j and k where (0 <= i < j <= k < arr.length).

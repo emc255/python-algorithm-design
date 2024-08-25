@@ -1,5 +1,5 @@
 """
-Continuous Subarray Sum
+523. Continuous Subarray Sum
 
 Given an integer array nums and an integer k,
 return true if nums has a good subarray or false otherwise.
@@ -64,7 +64,7 @@ def check_subarray_sum_v2(nums: list[int], k: int) -> bool:
             total += nums[j]
             if total % k == 0:
                 return True
-            
+
     return False
 
 

@@ -1,5 +1,5 @@
 """
-Hand of Straights
+846. Hand of Straights
 
 Alice has some number of cards and she wants to rearrange
 the cards into groups so that each group is of size groupSize,
@@ -28,6 +28,7 @@ Note: This question is the same as 1296:
 https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/
 
 """
+
 from collections import Counter
 
 from icecream import ic

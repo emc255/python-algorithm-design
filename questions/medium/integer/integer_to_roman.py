@@ -47,6 +47,7 @@ Constraints:
 1 <= num <= 3999
 
 """
+from icecream import ic
 
 
 def int_to_roman(num: int) -> str:
@@ -75,5 +76,5 @@ def int_to_roman(num: int) -> str:
     return roman_string
 
 
-print(int_to_roman(1994))
-print(int_to_roman(58))
+ic(int_to_roman(1994))
+ic(int_to_roman(58))

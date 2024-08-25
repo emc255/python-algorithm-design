@@ -30,6 +30,7 @@ Constraints:
 -231 <= dividend, divisor <= 231 - 1
 divisor != 0
 """
+from icecream import ic
 
 
 def divide(dividend: int, divisor: int) -> int:
@@ -75,8 +76,8 @@ def divide_v2(dividend: int, divisor: int) -> int:
     return min(max(result, int_min), int_max)
 
 
-print(divide_v2(-2147483648, 2))
-print(divide(1, -1))
-print(divide(-1, 1))
-print(divide_v2(7, -3))
-print(divide(10, 3))
+ic(divide_v2(-2147483648, 2))
+ic(divide(1, -1))
+ic(divide(-1, 1))
+ic(divide_v2(7, -3))
+ic(divide(10, 3))
