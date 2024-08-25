@@ -1,5 +1,5 @@
 """
-Remove Nodes From Linked List
+2487. Remove Nodes From Linked List
 
 You are given the head of a linked list.
 Remove every node which has a node with a greater value

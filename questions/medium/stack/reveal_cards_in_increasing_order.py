@@ -1,9 +1,12 @@
 """
-Reveal Cards In Increasing Order
+950. Reveal Cards In Increasing Order
 
-You are given an integer array deck. There is a deck of cards where every card has a unique integer. The integer on the ith card is deck[i].
+You are given an integer array deck.
+There is a deck of cards where every card has a unique integer.
+The integer on the ith card is deck[i].
 
-You can order the deck in any order you want. Initially, all the cards start face down (unrevealed) in one deck.
+You can order the deck in any order you want.
+Initially, all the cards start face down (unrevealed) in one deck.
 
 You will do the following steps repeatedly until all cards are revealed:
 
@@ -49,6 +52,7 @@ Constraints:
 All the values of deck are unique.
 
 """
+
 from collections import deque
 
 from icecream import ic

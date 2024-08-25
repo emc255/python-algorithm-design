@@ -1,5 +1,5 @@
 """
-The Number of Beautiful Subsets
+2597. The Number of Beautiful Subsets
 
 You are given an array nums of positive integers and a positive integer k.
 A subset of nums is beautiful if it does not contain two integers

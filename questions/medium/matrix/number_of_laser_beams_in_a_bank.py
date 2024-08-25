@@ -1,5 +1,5 @@
 """
-Number of Laser Beams in a Bank
+2125. Number of Laser Beams in a Bank
 
 Anti-theft security devices are activated inside a bank.
 You are given a 0-indexed binary string array bank representing the floor plan of the bank,

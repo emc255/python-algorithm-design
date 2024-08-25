@@ -24,6 +24,7 @@ Constraints:
 -104 <= target <= 104
 
 """
+from icecream import ic
 
 
 def three_sum_closest(nums: list, target: int) -> int:
@@ -51,7 +52,7 @@ def three_sum_closest(nums: list, target: int) -> int:
     return result
 
 
-print(three_sum_closest([-1, 2, 1, -4], 1))
-print(three_sum_closest([0, 0, 0], 1))
+ic(three_sum_closest([-1, 2, 1, -4], 1))
+ic(three_sum_closest([0, 0, 0], 1))
 
-print(three_sum_closest([0, 1, 2], 3))
+ic(three_sum_closest([0, 1, 2], 3))

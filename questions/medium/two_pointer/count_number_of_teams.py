@@ -1,5 +1,5 @@
 """
-Count Number of Teams
+1395. Count Number of Teams
 
 There are n soldiers standing in a line.
 Each soldier is assigned a unique rating value.

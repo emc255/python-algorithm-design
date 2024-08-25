@@ -31,6 +31,7 @@ Constraints:
 -105 <= nums[i] <= 105
 
 """
+from icecream import ic
 
 
 def three_sum(nums: list) -> list:
@@ -58,6 +59,6 @@ def three_sum(nums: list) -> list:
     return result
 
 
-print(three_sum([-1, 0, 1, 2, -1, -4]))
-print(three_sum([0, 0, 0, 0]))
-print(three_sum([1, 2, 3, 4, 5]))
+ic(three_sum([-1, 0, 1, 2, -1, -4]))
+ic(three_sum([0, 0, 0, 0]))
+ic(three_sum([1, 2, 3, 4, 5]))

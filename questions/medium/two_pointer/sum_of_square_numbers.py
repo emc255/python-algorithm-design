@@ -1,5 +1,5 @@
 """
-Sum of Square Numbers
+633. Sum of Square Numbers
 
 Given a non-negative integer c, decide whether
 there are two integers a and b such that a2 + b2 = c.

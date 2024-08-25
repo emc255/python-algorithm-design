@@ -1,5 +1,5 @@
 """
-Longest Ideal Subsequence
+2370. Longest Ideal Subsequence
 
 You are given a string s consisting of lowercase letters and an integer k.
 We call a string t ideal if the following conditions are satisfied:

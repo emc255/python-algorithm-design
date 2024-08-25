@@ -1,5 +1,5 @@
 """
-Minimum Number of Operations to Make Array Empty
+2870. Minimum Number of Operations to Make Array Empty
 
 You are given a 0-indexed array nums consisting of positive integers.
 

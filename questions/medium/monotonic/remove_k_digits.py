@@ -1,5 +1,5 @@
 """
-Remove K Digits
+402. Remove K Digits
 
 Given string num representing a non-negative integer num,
 and an integer k,

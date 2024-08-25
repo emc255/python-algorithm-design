@@ -39,6 +39,7 @@ s1, s2, and s3 consist of lowercase English letters.
 Follow up: Could you solve it using only O(s2.length) additional memory space?
 
 """
+from icecream import ic
 
 
 def is_interleave(s1: str, s2: str, s3: str) -> bool:
@@ -65,8 +66,8 @@ def is_interleave(s1: str, s2: str, s3: str) -> bool:
     return dfs(0, 0)
 
 
-# print(is_interleave("aabcc", "dbbca", "aadbbcbcac"))
-# print(is_interleave("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+# ic(is_interleave("aabcc", "dbbca", "aadbbcbcac"))
+# ic(is_interleave("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
 #                     "aaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
 #                     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"))
-print(is_interleave("", "", "a"))
+ic(is_interleave("", "", "a"))

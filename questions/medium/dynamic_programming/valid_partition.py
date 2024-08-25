@@ -33,6 +33,8 @@ Constraints:
 """
 from functools import cache
 
+from icecream import ic
+
 
 def valid_partition(nums: list) -> bool:
     n = len(nums)
@@ -69,10 +71,10 @@ def valid_partition_v2(nums: list) -> bool:
         if i + 2 < n and nums[i] == nums[i + 1] - 1 and nums[i + 1] == nums[i + 2] - 1 and valid(i + 3):
             return True
         return False
-    
+
     return valid(0)
 
 
-print(valid_partition([4, 4, 4, 5, 6]))
-print(valid_partition([1, 1, 1, 2]))
-print(valid_partition_v2([1, 1, 1, 2]))
+ic(valid_partition([4, 4, 4, 5, 6]))
+ic(valid_partition([1, 1, 1, 2]))
+ic(valid_partition_v2([1, 1, 1, 2]))

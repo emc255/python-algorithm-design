@@ -1,5 +1,5 @@
 """
-Subarray Sums Divisible by K
+974. Subarray Sums Divisible by K
 
 Given an integer array nums and an integer k,
 return the number of non-empty sub arrays that have a sum divisible by k.

@@ -22,6 +22,8 @@ Constraints:
 """
 import random
 
+from icecream import ic
+
 
 def find_kth_largest(nums: list, k: int) -> int:
     def partition(left, right, pivot_index):
@@ -47,4 +49,4 @@ def find_kth_largest(nums: list, k: int) -> int:
             left = new_pivot_index + 1
 
 
-print(find_kth_largest([3, 2, 1, 5, 6, 4], 2))
+ic(find_kth_largest([3, 2, 1, 5, 6, 4], 2))

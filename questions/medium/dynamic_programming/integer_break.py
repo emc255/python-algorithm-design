@@ -23,6 +23,8 @@ Constraints:
 import operator
 from functools import reduce
 
+from icecream import ic
+
 
 def integer_break(n: int) -> int:
     def find_combinations(target):
@@ -82,6 +84,6 @@ def integer_break_v3(n: int) -> int:
     return dp[n]
 
 
-print(integer_break_v2(10))
+ic(integer_break_v2(10))
 
-print(integer_break_v3(44))
+ic(integer_break_v3(44))

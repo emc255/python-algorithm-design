@@ -1,5 +1,5 @@
 """
-Path with Maximum Gold
+1219. Path with Maximum Gold
 
 In a gold mine grid of size m x n,
 each cell in this mine has an integer representing

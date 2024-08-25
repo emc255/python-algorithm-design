@@ -1,5 +1,5 @@
 """
-Find Valid Matrix Given Row and Column Sums
+1605. Find Valid Matrix Given Row and Column Sums
 
 You are given two arrays rowSum and colSum of non-negative integers where rowSum[i] is
 the sum of the elements in the ith row and colSum[j] is the sum of the elements of

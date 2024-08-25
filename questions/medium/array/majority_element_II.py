@@ -25,6 +25,8 @@ Follow up: Could you solve the problem in linear time and in O(1) space?
 from collections import defaultdict
 from itertools import groupby
 
+from icecream import ic
+
 
 def majority_element(nums: list) -> list:
     result = []
@@ -59,5 +61,5 @@ def majority_element_v2(nums: list) -> list:
     return result
 
 
-print(majority_element([3, 2, 3]))
-print(majority_element_v2([3, 2, 3]))
+ic(majority_element([3, 2, 3]))
+ic(majority_element_v2([3, 2, 3]))

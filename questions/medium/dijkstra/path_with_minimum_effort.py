@@ -35,24 +35,41 @@ columns == heights[i].length
 1 <= heights[i][j] <= 106
 
 """
+import heapq
+
 from icecream import ic
 
 
 def minimum_effort_path(heights: list) -> int:
-    r, c = len(heights), len(heights[0])
+    rows, cols = len(heights), len(heights[0])
+    # Directions for moving up, down, left, right
+    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
-    def dfs(row, column):
-        if row > r or column > c:
-            return 0
-        total = 0
+    # Priority queue, starting with (effort, x, y)
+    pq = [(0, 0, 0)]  # (effort, row, col)
+    efforts = [[float('inf')] * cols for _ in range(rows)]
+    efforts[0][0] = 0
 
-        if row == r - 1:
-            return total
+    while pq:
+        effort, x, y = heapq.heappop(pq)
 
-        dfs(row + 1, column)
+        # If we reached the bottom-right corner, return the effort
+        if x == rows - 1 and y == cols - 1:
+            return effort
 
-    dfs(0, 0)
-    pass
+        # Explore neighbors
+        for dx, dy in directions:
+            nx, ny = x + dx, y + dy
+            if 0 <= nx < rows and 0 <= ny < cols:
+                # Calculate the effort to move to the next cell
+                next_effort = max(effort, abs(heights[nx][ny] - heights[x][y]))
+
+                # If this path offers a smaller effort, update and push to pq
+                if next_effort < efforts[nx][ny]:
+                    efforts[nx][ny] = next_effort
+                    heapq.heappush(pq, (next_effort, nx, ny))
+
+    return 0  # This will never be reached as there's always a valid path.
 
 
 """

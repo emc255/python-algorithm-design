@@ -23,6 +23,7 @@ Constraints:
 -109 <= target <= 109
 
 """
+from icecream import ic
 
 
 def four_sum(nums: list, target: int) -> list:
@@ -56,5 +57,5 @@ def four_sum(nums: list, target: int) -> list:
     return result
 
 
-print(four_sum([1, 0, -1, 0, -2, 2], 0))
-print(four_sum([2, 2, 2, 2, 2, 2], 8))
+ic(four_sum([1, 0, -1, 0, -2, 2], 0))
+ic(four_sum([2, 2, 2, 2, 2, 2], 8))

@@ -1,5 +1,5 @@
 """
-Best Time to Buy and Sell Stock II
+122. Best Time to Buy and Sell Stock II
 
 You are given an integer array prices
 where prices[i] is the price of a given stock on the ith day.
@@ -43,19 +43,11 @@ from icecream import ic
 
 
 def max_profit(prices: list[int]) -> int:
-    def dp(i):
-        if i < N:
-            return
-        profit = 0
-        # buy
-        
-        # sell
-        return profit
-
-    N = len(prices)
-    result = 0
-
-    return result
+    max_profit = 0
+    for i in range(1, len(prices)):
+        if prices[i] > prices[i - 1]:
+            max_profit += prices[i] - prices[i - 1]
+    return max_profit
 
 
 ic(max_profit([7, 6, 4, 3, 1]))

@@ -68,6 +68,7 @@ Constraints:
 s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
 
 """
+from icecream import ic
 
 
 def my_atoi(s: str) -> int:
@@ -97,10 +98,10 @@ def my_atoi(s: str) -> int:
     return min(max_size, result) if result > 0 else max(min_size, result)
 
 
-print(my_atoi("4193 with words"))
-print(my_atoi("-4193"))
-print(my_atoi("-+42"))
-print(my_atoi("21474836460"))
-print(my_atoi("0000-1"))
-print(my_atoi("  0000000000012345678"))
-print(my_atoi("   +0 123"))
+ic(my_atoi("4193 with words"))
+ic(my_atoi("-4193"))
+ic(my_atoi("-+42"))
+ic(my_atoi("21474836460"))
+ic(my_atoi("0000-1"))
+ic(my_atoi("  0000000000012345678"))
+ic(my_atoi("   +0 123"))

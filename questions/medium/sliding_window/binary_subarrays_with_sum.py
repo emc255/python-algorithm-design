@@ -1,5 +1,5 @@
 """
-Binary Subarrays With Sum
+930. Binary Subarrays With Sum
 
 Given a binary array nums and an integer goal,
 return the number of non-empty subarrays with a sum goal.

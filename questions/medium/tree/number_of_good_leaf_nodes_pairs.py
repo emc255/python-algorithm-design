@@ -1,5 +1,5 @@
 """
-Number of Good Leaf Nodes Pairs
+1530. Number of Good Leaf Nodes Pairs
 
 You are given the root of a binary tree and an integer distance.
 A pair of two different leaf nodes of a binary tree is said to be good if

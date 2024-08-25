@@ -1,5 +1,5 @@
 """
-Minimum Increment to Make Array Unique
+945. Minimum Increment to Make Array Unique
 
 ou are given an integer array nums.
 In one move, you can pick an index i

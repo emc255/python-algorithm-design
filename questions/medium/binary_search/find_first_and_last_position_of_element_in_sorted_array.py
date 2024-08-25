@@ -27,6 +27,7 @@ nums is a non-decreasing array.
 -109 <= target <= 109
 
 """
+from icecream import ic
 
 
 def search_range(nums: list, target: int) -> list:
@@ -88,15 +89,15 @@ def search_range_v2(nums, target):
         return [-1, -1]
 
 
-print(search_range([5, 7, 7, 8, 8, 10], 8))
-print(search_range([5, 7, 7, 8, 8, 10], 6))
-print(search_range([1], 1))
-print(search_range([1, 3], 1))
-print(search_range([1, 1, 1, 1], 1))
-print("==============")
+ic(search_range([5, 7, 7, 8, 8, 10], 8))
+ic(search_range([5, 7, 7, 8, 8, 10], 6))
+ic(search_range([1], 1))
+ic(search_range([1, 3], 1))
+ic(search_range([1, 1, 1, 1], 1))
+ic("==============")
 
-print(search_range_v2([5, 7, 7, 8, 8, 10], 8))
-print(search_range_v2([5, 7, 7, 8, 8, 10], 6))
-print(search_range_v2([1], 1))
-print(search_range_v2([1, 3], 1))
-print(search_range_v2([1, 1, 1, 1], 1))
+ic(search_range_v2([5, 7, 7, 8, 8, 10], 8))
+ic(search_range_v2([5, 7, 7, 8, 8, 10], 6))
+ic(search_range_v2([1], 1))
+ic(search_range_v2([1, 3], 1))
+ic(search_range_v2([1, 1, 1, 1], 1))

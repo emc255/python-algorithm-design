@@ -1,5 +1,5 @@
 """
-Merge Intervals
+56. Merge Intervals
 
 Given an array of intervals where intervals[i] = [starti, endi],
 merge all overlapping intervals,

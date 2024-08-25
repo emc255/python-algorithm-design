@@ -1,5 +1,5 @@
 """
-Count Subarrays Where Max Element Appears at Least K Times
+2962. Count Subarrays Where Max Element Appears at Least K Times
 
 You are given an integer array nums and a positive integer k.
 
@@ -26,20 +26,41 @@ Constraints:
 1 <= k <= 105
 
 """
-from collections import defaultdict
 
 from icecream import ic
 
 
 def count_sub_arrays(nums: list[int], k: int) -> int:
+    max_element = max(nums)
+    ans = start = max_elements_in_window = 0
+
+    for end in range(len(nums)):
+        if nums[end] == max_element:
+            max_elements_in_window += 1
+        while max_elements_in_window == k:
+            if nums[start] == max_element:
+                max_elements_in_window -= 1
+            start += 1
+        ans += start
+    return ans
+
+
+def count_sub_arrays_v2(nums: list[int], k: int) -> int:
+    max_number = max(nums)
     result = 0
-    count = defaultdict(int)
-    l = 0
-    for r in range(len(nums)):
-        a = nums[l:r + 1]
-        ic(a)
+    count = 0
+    left = 0
+    for num in nums:
+        if num == max_number:
+            count += 1
+        while count == k:
+            if nums[left] == max_number:
+                count -= 1
+            left += 1
+        result += left
+
     return result
 
 
 ic(count_sub_arrays([1, 3, 2, 3, 3], 2))
-# ic(count_sub_arrays([1, 4, 2, 1], 3))
+ic(count_sub_arrays([28, 5, 58, 91, 24, 91, 53, 9, 48, 85, 16, 70, 91, 91, 47, 91, 61, 4, 54, 61, 49], 1))

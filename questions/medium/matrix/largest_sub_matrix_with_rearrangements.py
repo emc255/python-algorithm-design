@@ -37,17 +37,17 @@ from icecream import ic
 
 def largest_sub_matrix(matrix: list) -> int:
     result = 0
-    m = len(matrix)
-    n = len(matrix[0])
+    R = len(matrix)
+    C = len(matrix[0])
 
-    for row in range(m):
-        for col in range(n):
+    for row in range(R):
+        for col in range(C):
             if matrix[row][col] != 0 and row > 0:
                 matrix[row][col] += matrix[row - 1][col]
 
         current_row = sorted(matrix[row], reverse=True)
         ic(current_row)
-        for i in range(n):
+        for i in range(C):
             result = max(result, current_row[i] * (i + 1))
 
     return result

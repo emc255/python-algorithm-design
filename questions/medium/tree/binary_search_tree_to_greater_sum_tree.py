@@ -1,5 +1,5 @@
 """
-Binary Search Tree to Greater Sum Tree
+1038. Binary Search Tree to Greater Sum Tree
 
 Given the root of a Binary Search Tree (BST), convert it to a Greater Tree
 such that every key of the original BST is changed to the original key plus
@@ -36,7 +36,7 @@ from shared.commons import TreeNode
 def bst_to_gst(root: TreeNode) -> TreeNode:
     def dfs(node: TreeNode):
         nonlocal current_sum
-        
+
         if not node:
             return
 

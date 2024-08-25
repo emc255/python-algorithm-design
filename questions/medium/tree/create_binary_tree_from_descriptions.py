@@ -1,5 +1,5 @@
 """
-Create Binary Tree From Descriptions
+2196. Create Binary Tree From Descriptions
 
 You are given a 2D integer array descriptions
 where descriptions[i] = [parenti, childi, isLefti] indicates
@@ -57,9 +57,4 @@ def create_binary_tree(descriptions: list[list[int]]) -> Optional[TreeNode]:
             return nodes[parent]
 
 
-def main():
-    descriptions = [[20, 15, 1], [20, 17, 0], [50, 20, 1], [50, 80, 0], [80, 19, 1]]
-    ic(create_binary_tree(descriptions))
-
-
-main()
+ic(create_binary_tree([[20, 15, 1], [20, 17, 0], [50, 20, 1], [50, 80, 0], [80, 19, 1]]))

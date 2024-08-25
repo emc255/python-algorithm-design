@@ -27,6 +27,7 @@ Constraints:
 1 <= m, n <= 100
 
 """
+from icecream import ic
 
 
 def unique_paths(m: int, n: int):
@@ -46,4 +47,4 @@ def unique_paths(m: int, n: int):
     return dp(m, n)
 
 
-print(unique_paths(3, 2))
+ic(unique_paths(3, 2))

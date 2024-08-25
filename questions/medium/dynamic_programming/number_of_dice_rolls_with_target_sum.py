@@ -1,5 +1,5 @@
 """
-Number of Dice Rolls With Target Sum
+1155. Number of Dice Rolls With Target Sum
 
 You have n dice, and each die has k faces numbered from 1 to k.
 
