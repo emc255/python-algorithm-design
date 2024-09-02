@@ -1,5 +1,5 @@
 """
-2699.
+2699. Modify Graph Edge Weights
 
 You are given an undirected weighted connected graph containing n nodes labeled
 from 0 to n - 1, and an integer array edges where edges[i] = [ai, bi, wi] indicates
@@ -57,11 +57,14 @@ The graph is connected, and there are no self-loops or repeated edges
 
 """
 import heapq
+import math
+
+from icecream import ic
 
 
 def modified_graph_edges(n: int, edges: list[list[int]], source: int, destination: int, target: int) -> list[list[int]]:
     def dijkstra(graph2: list[list[tuple[int, int]]], src: int, destination2: int) -> int:
-        min_distance = [float['inf']] * len(graph2)
+        min_distance = [math.inf] * len(graph2)
         min_distance[src] = 0
         min_heap = [(0, src)]  # (distance, node)
 
@@ -117,4 +120,8 @@ def modified_graph_edges(n: int, edges: list[list[int]], source: int, destinatio
                 if edges[j][2] == -1:
                     edges[j][2] = INF
             return edges
+
     return []
+
+
+ic(modified_graph_edges(5, [[4, 1, -1], [2, 0, -1], [0, 3, -1], [4, 3, -1]], 0, 1, 5))
