@@ -31,6 +31,7 @@ Constraints:
 1 <= columnNumber <= 231 - 1
 
 """
+from icecream import ic
 
 
 def convert_to_title(column_number: int) -> str:
@@ -41,4 +42,4 @@ def convert_to_title(column_number: int) -> str:
     return ''.join(reversed(result))
 
 
-print(convert_to_title(701))
+ic(convert_to_title(701))
