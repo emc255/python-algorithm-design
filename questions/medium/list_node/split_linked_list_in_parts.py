@@ -36,6 +36,8 @@ The number of nodes in the list is in the range [0, 1000].
 """
 from typing import Optional
 
+from icecream import ic
+
 from shared.commons import ListNode, LinkedList
 
 
@@ -50,7 +52,7 @@ def split_list_to_parts(head: Optional[ListNode], k: int) -> list:
 
     base_size, extra = divmod(length, k)
     current = head
-    
+
     for _ in range(k):
         dummy = ListNode()
         part_head = dummy
@@ -69,5 +71,5 @@ def split_list_to_parts(head: Optional[ListNode], k: int) -> list:
     return parts
 
 
-print(split_list_to_parts(LinkedList([1, 2, 3]).head, 5))
-print(split_list_to_parts(LinkedList([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).head, 3))
+ic(split_list_to_parts(LinkedList([1, 2, 3]).head, 5))
+ic(split_list_to_parts(LinkedList([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).head, 3))
