@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of Pushes to Type Word II"
+filename = "Insert Greatest Common Divisors in Linked List"
 ic(format_file_name(filename))
 
-func = "minimumPushes"
+func = "insertGreatestCommonDivisors"
 ic(camel_to_snake_case(func))
