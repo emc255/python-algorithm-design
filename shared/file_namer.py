@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Insert Greatest Common Divisors in Linked List"
+filename = "Minimum Bit Flips to Convert Number"
 ic(format_file_name(filename))
 
-func = "insertGreatestCommonDivisors"
+func = "minimumBitFlips"
 ic(camel_to_snake_case(func))
