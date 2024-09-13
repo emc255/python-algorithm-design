@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Bit Flips to Convert Number"
+filename = "Count the Number of Consistent Strings"
 ic(format_file_name(filename))
 
-func = "minimumBitFlips"
+func = "countConsistentStrings"
 ic(camel_to_snake_case(func))
