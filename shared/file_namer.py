@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "XOR Queries of a Subarray"
+filename = "Longest Subarray With Maximum Bitwise AND"
 ic(format_file_name(filename))
 
-func = "xorQueries"
+func = "longestSubarray"
 ic(camel_to_snake_case(func))
