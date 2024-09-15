@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Longest Subarray With Maximum Bitwise AND"
+filename = "Find the Longest Substring Containing Vowels in Even Counts"
 ic(format_file_name(filename))
 
-func = "longestSubarray"
+func = "findTheLongestSubstring"
 ic(camel_to_snake_case(func))
