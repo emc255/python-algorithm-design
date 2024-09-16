@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find the Longest Substring Containing Vowels in Even Counts"
+filename = "Minimum Time Difference"
 ic(format_file_name(filename))
 
-func = "findTheLongestSubstring"
+func = "findMinDifference"
 ic(camel_to_snake_case(func))
