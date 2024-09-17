@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Time Difference"
+filename = "Uncommon Words from Two Sentences"
 ic(format_file_name(filename))
 
-func = "findMinDifference"
+func = "uncommonFromSentences"
 ic(camel_to_snake_case(func))
