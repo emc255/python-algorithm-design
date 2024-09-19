@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Different Ways to Add Parentheses"
+filename = "Largest Number"
 ic(format_file_name(filename))
 
-func = "diffWaysToCompute"
+func = "largestNumber"
 ic(camel_to_snake_case(func))
