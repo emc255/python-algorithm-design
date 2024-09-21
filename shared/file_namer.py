@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Largest Number"
+filename = "Lexicographical Numbers"
 ic(format_file_name(filename))
 
-func = "largestNumber"
+func = "lexicalOrder"
 ic(camel_to_snake_case(func))
