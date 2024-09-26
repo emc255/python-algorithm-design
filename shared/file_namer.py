@@ -17,7 +17,7 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sum of Prefix Scores of Strings"
+filename = "My Calendar I"
 ic(format_file_name(filename))
 
 func = "sumPrefixScores"
