@@ -17,7 +17,7 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "My Calendar II"
+filename = "Design Circular Deque"
 ic(format_file_name(filename))
 
 func = "sumPrefixScores"
