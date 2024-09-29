@@ -49,7 +49,6 @@ class MyCalendar:
     def book(self, start: int, end: int) -> bool:
         # Find the insertion point for the new interval (start, end)
         idx = bisect.bisect_right(self.booking_schedule, (start, end))
-        ic(idx)
         # Check with the previous interval (if it exists)
         if idx > 0 and self.booking_schedule[idx - 1][1] > start:
             return False  # Overlap with previous booking
@@ -60,7 +59,6 @@ class MyCalendar:
 
         # If no overlap, insert the booking at the correct position
         self.booking_schedule.insert(idx, (start, end))
-        ic(self.booking_schedule)
         return True
 
 
