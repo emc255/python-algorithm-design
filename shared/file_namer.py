@@ -17,7 +17,7 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "All O`one Data Structure"
+filename = "Design a Stack With Increment Operation"
 ic(format_file_name(filename))
 
 func = "sumPrefixScores"
