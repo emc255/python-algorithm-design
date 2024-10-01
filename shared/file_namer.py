@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Design a Stack With Increment Operation"
+filename = "Check If Array Pairs Are Divisible by k"
 ic(format_file_name(filename))
 
-func = "sumPrefixScores"
+func = "canArrange"
 ic(camel_to_snake_case(func))
