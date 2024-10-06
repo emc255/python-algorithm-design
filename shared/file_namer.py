@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Divide Players Into Teams of Equal Skill"
+filename = "Permutation in String"
 ic(format_file_name(filename))
 
-func = "dividePlayers"
+func = "checkInclusion"
 ic(camel_to_snake_case(func))
