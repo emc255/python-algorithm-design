@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Permutation in String"
+filename = "Sentence Similarity III"
 ic(format_file_name(filename))
 
-func = "checkInclusion"
+func = "areSentencesSimilar"
 ic(camel_to_snake_case(func))
