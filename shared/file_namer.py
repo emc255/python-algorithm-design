@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sentence Similarity III"
+filename = "Minimum Number of Swaps to Make the String Balanced"
 ic(format_file_name(filename))
 
-func = "areSentencesSimilar"
+func = "minimumSwaps"
 ic(camel_to_snake_case(func))
