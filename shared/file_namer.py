@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Add to Make Parentheses Valid"
+filename = "Maximum Swap"
 ic(format_file_name(filename))
 
-func = "minimumAddToMakeValid"
+func = "maximumSwap"
 ic(camel_to_snake_case(func))
