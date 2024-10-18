@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Swap"
+filename = "Count Number of Maximum Bitwise-OR Subsets"
 ic(format_file_name(filename))
 
-func = "maximumSwap"
+func = "countMaxOrSubsets"
 ic(camel_to_snake_case(func))
