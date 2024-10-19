@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Number of Maximum Bitwise-OR Subsets"
+filename = "Find Kth Bit in Nth Binary String"
 ic(format_file_name(filename))
 
-func = "countMaxOrSubsets"
+func = "findKthBit"
 ic(camel_to_snake_case(func))
