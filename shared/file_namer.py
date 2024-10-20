@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find Kth Bit in Nth Binary String"
+filename = "Parsing A Boolean Expression"
 ic(format_file_name(filename))
 
-func = "findKthBit"
+func = "parseBoolExpression"
 ic(camel_to_snake_case(func))
