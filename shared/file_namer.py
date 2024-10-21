@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Parsing A Boolean Expression"
+filename = "Split a String Into the Max Number of Unique Substrings"
 ic(format_file_name(filename))
 
-func = "parseBoolExpression"
+func = "maxUniqueSplit"
 ic(camel_to_snake_case(func))
