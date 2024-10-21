@@ -36,22 +36,43 @@ def lexical_order(n: int) -> list[int]:
             current += 1
             while current % 10 == 0:
                 current //= 10
+
     return result
 
 
 def lexical_order_v2(n: int) -> list[int]:
-    res = []
+    result = []
     num = 1
     for _ in range(n):
-        res.append(num)
+        result.append(num)
         if num * 10 <= n:
             num *= 10
         else:
             while num % 10 == 9 or num + 1 > n:
                 num //= 10
             num += 1
-    return res
+    ic(result[1])
+    return result
+
+
+def lexical_order_v3(n: int, k: int) -> int:
+    current = 1
+    for _ in range(n):
+
+        if current * 10 <= n:
+            current *= 10
+        else:
+            if current >= n:
+                current //= 10
+            current += 1
+            while current % 10 == 0:
+                current //= 10
+        k -= 1
+        if k == 1:
+            return current
+    return n
 
 
 ic(lexical_order(33))
 ic(lexical_order_v2(222))
+ic(lexical_order_v3(12, 1))
