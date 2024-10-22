@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Split a String Into the Max Number of Unique Substrings"
+filename = "Kth Largest Sum in a Binary Tree"
 ic(format_file_name(filename))
 
-func = "maxUniqueSplit"
+func = "kthLargestLevelSum"
 ic(camel_to_snake_case(func))
