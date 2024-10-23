@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Kth Largest Sum in a Binary Tree"
+filename = "Ransom Note"
 ic(format_file_name(filename))
 
-func = "kthLargestLevelSum"
+func = "canConstruct"
 ic(camel_to_snake_case(func))
