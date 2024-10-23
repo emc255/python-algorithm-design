@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Ransom Note"
+filename = "Cousins in Binary Tree II"
 ic(format_file_name(filename))
 
-func = "canConstruct"
+func = "replaceValueInTree"
 ic(camel_to_snake_case(func))
