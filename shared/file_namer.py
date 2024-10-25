@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Flip Equivalent Binary Trees"
+filename = "Remove Sub-Folders from the Filesystem"
 ic(format_file_name(filename))
 
-func = "flipEquiv"
+func = "removeSubfolders"
 ic(camel_to_snake_case(func))
