@@ -54,4 +54,4 @@ def make_fancy_string(s: str) -> str:
     return result
 
 
-ic(make_fancy_string("aaabaaaa"))
+ic(make_fancy_string("aasabaaaa"))
