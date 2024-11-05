@@ -46,27 +46,12 @@ from icecream import ic
 
 
 def minimum_changes(s: str) -> int:
-    if len(s) == 2:
-        if s[0] == s[1]:
-            return 0
-        else:
-            return 1
-    mid = len(s) // 2
     result = 0
-    zeroes = 0
-    ones = 0
-    for i in range(len(s)):
-        if s[i] == "1":
-            ones += 1
-        else:
-            zeroes += 1
-        if mid - 1 == i or i == len(s) - 1:
-            result += ones if ones < zeroes or ones == zeroes else zeroes
-            zeroes = 0
-            ones = 0
-
+    for i in range(0, len(s), 2):
+        if s[i] != s[i + 1]:
+            result += 1
     return result
 
 
-# ic(minimum_changes(s="1001"))
+ic(minimum_changes(s="1001"))
 ic(minimum_changes(s="10"))
