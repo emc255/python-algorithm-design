@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Delete Characters to Make Fancy String"
+filename = "Circular Sentence"
 ic(format_file_name(filename))
 
-func = "makeFancyString"
+func = "isCircularSentence"
 ic(camel_to_snake_case(func))
