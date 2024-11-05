@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Circular Sentence"
+filename = "Minimum Number of Changes to Make Binary String Beautiful"
 ic(format_file_name(filename))
 
-func = "isCircularSentence"
+func = "minChanges"
 ic(camel_to_snake_case(func))
