@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of Changes to Make Binary String Beautiful"
+filename = "Maximum Sum of Distinct Subarrays With Length K"
 ic(format_file_name(filename))
 
-func = "minChanges"
+func = "maximumSubarraySum"
 ic(camel_to_snake_case(func))
