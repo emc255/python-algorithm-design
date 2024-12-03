@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Sum of Distinct Subarrays With Length K"
+filename = "Adding Spaces to a String"
 ic(format_file_name(filename))
 
-func = "maximumSubarraySum"
+func = "addSpaces"
 ic(camel_to_snake_case(func))
