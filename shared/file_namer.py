@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Adding Spaces to a String"
+filename = "Make String a Subsequence Using Cyclic Increments"
 ic(format_file_name(filename))
 
-func = "addSpaces"
+func = "canMakeSubsequence"
 ic(camel_to_snake_case(func))
