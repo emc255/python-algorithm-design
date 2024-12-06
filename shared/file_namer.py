@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Move Pieces to Obtain a String"
+filename = "Maximum Number of Integers to Choose From a Range I"
 ic(format_file_name(filename))
 
-func = "canChange"
+func = "maxCount"
 ic(camel_to_snake_case(func))
