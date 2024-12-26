@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Number of Integers to Choose From a Range I"
+filename = "Target Sum"
 ic(format_file_name(filename))
 
-func = "maxCount"
+func = "findTargetSumWays"
 ic(camel_to_snake_case(func))
