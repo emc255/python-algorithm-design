@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Target Sum"
+filename = "Shifting Letters II"
 ic(format_file_name(filename))
 
-func = "findTargetSumWays"
+func = "shiftingLetters"
 ic(camel_to_snake_case(func))
