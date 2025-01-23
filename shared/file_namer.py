@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Shifting Letters II"
+filename = "Count Servers that Communicate"
 ic(format_file_name(filename))
 
-func = "shiftingLetters"
+func = "countServers"
 ic(camel_to_snake_case(func))
