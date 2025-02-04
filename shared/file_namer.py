@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Servers that Communicate"
+filename = "Maximum Ascending Subarray Sum"
 ic(format_file_name(filename))
 
-func = "countServers"
+func = "maxAscendingSum"
 ic(camel_to_snake_case(func))
