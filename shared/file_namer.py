@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Ascending Subarray Sum"
+filename = "Check if One String Swap Can Make Strings Equal"
 ic(format_file_name(filename))
 
-func = "maxAscendingSum"
+func = "areAlmostEqual"
 ic(camel_to_snake_case(func))
