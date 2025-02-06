@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Check if One String Swap Can Make Strings Equal"
+filename = "Tuple with Same Product"
 ic(format_file_name(filename))
 
-func = "areAlmostEqual"
+func = "tupleSameProduct"
 ic(camel_to_snake_case(func))
