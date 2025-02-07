@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Tuple with Same Product"
+filename = "Find the Number of Distinct Colors Among the Balls"
 ic(format_file_name(filename))
 
-func = "tupleSameProduct"
+func = "queryResults"
 ic(camel_to_snake_case(func))
