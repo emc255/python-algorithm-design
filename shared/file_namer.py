@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find the Number of Distinct Colors Among the Balls"
+filename = "Count Number of Bad Pairs"
 ic(format_file_name(filename))
 
-func = "queryResults"
+func = "countBadPairs"
 ic(camel_to_snake_case(func))
