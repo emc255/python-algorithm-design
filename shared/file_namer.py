@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Number of Bad Pairs"
+filename = "Number of Sub-arrays With Odd Sum"
 ic(format_file_name(filename))
 
-func = "countBadPairs"
+func = "numOfSubarrays"
 ic(camel_to_snake_case(func))
