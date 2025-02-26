@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Number of Sub-arrays With Odd Sum"
+filename = "Maximum Absolute Sum of Any Subarray"
 ic(format_file_name(filename))
 
-func = "numOfSubarrays"
+func = "maxAbsoluteSum"
 ic(camel_to_snake_case(func))
