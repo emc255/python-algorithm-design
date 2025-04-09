@@ -17,7 +17,7 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Number of Operations to Make Elements in Array Distinct"
+filename = "Minimum Operations to Make Array Values Equal to K"
 ic(format_file_name(filename))
 
 func = "minimumOperations"
