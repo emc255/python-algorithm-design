@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Operations to Make Array Values Equal to K"
+filename = "Count Good Triplets"
 ic(format_file_name(filename))
 
-func = "minimumOperations"
+func = "countGoodTriplets"
 ic(camel_to_snake_case(func))
