@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Good Triplets"
+filename = "Count Subarrays of Length Three With a Condition"
 ic(format_file_name(filename))
 
-func = "countGoodTriplets"
+func = "countSubarrays"
 ic(camel_to_snake_case(func))
