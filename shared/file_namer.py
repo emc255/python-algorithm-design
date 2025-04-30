@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Count Subarrays With Score Less Than K"
+filename = "Multiply Strings"
 ic(format_file_name(filename))
 
-func = "countSubarrays"
+func = "multiply"
 ic(camel_to_snake_case(func))
