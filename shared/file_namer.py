@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Multiply Strings"
+filename = "Rotate List"
 ic(format_file_name(filename))
 
-func = "multiply"
+func = "rotateRight"
 ic(camel_to_snake_case(func))
