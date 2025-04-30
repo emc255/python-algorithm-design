@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Rotate List"
+filename = "Minimum Path Sum"
 ic(format_file_name(filename))
 
-func = "rotateRight"
+func = "minPathSum"
 ic(camel_to_snake_case(func))
