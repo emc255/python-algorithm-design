@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Simplify Path"
+filename = "Maximum Number of Tasks You Can Assign"
 ic(format_file_name(filename))
 
-func = "simplifyPath"
+func = "maxTaskAssign"
 ic(camel_to_snake_case(func))
