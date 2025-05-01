@@ -78,3 +78,4 @@ def simplify_path(path: str) -> str:
 
 ic(simplify_path(path="/.../a/../b/c/../d/./"))
 ic(simplify_path(path="/../"))
+ic(simplify_path(path="/home//foo/"))
