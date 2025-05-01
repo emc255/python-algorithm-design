@@ -30,18 +30,23 @@ from icecream import ic
 
 def minimum_path_sum(grid: list[list[int]]) -> int:
     def path(r, c):
+        if (r, c) in memo:
+            return memo[r, c]
+
         if r >= R or c >= C:
             return float('inf')
+        
         if r == R - 1 and c == C - 1:
             return grid[r][c]
 
         down = path(r + 1, c)
         right = path(r, c + 1)
-
-        return grid[r][c] + min(down, right)
+        memo[(r, c)] = grid[r][c] + min(down, right)
+        return memo[(r, c)]
 
     R = len(grid)
     C = len(grid[0])
+    memo = {}
     return path(0, 0)
 
 
