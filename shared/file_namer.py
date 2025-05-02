@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = ""
+filename = "Push Dominoes"
 ic(format_file_name(filename))
 
-func = ""
+func = "pushDominoes"
 ic(camel_to_snake_case(func))
