@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Minimum Domino Rotations For Equal Row"
+filename = "Build Array from Permutation"
 ic(format_file_name(filename))
 
-func = "minDominoRotations"
+func = "buildArray"
 ic(camel_to_snake_case(func))
