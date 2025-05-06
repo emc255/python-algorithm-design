@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Build Array from Permutation"
+filename = "Edit Distance"
 ic(format_file_name(filename))
 
-func = "buildArray"
+func = "minimumDistance"
 ic(camel_to_snake_case(func))
