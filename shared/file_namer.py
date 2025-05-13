@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find Minimum Time to Reach Last Room I"
+filename = "Total Characters in String After Transformations I"
 ic(format_file_name(filename))
 
-func = "minimumTimeToReach"
+func = "lengthAfterTransformations "
 ic(camel_to_snake_case(func))
