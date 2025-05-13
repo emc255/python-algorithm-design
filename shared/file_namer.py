@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Finding 3-Digit Even Numbers"
+filename = "Find Minimum Time to Reach Last Room I"
 ic(format_file_name(filename))
 
-func = "findEvenNumbers"
+func = "minimumTimeToReach"
 ic(camel_to_snake_case(func))
