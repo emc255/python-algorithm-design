@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Longest Palindrome by Concatenating Two Letter Words"
+filename = "Largest Color Value in a Directed Graph"
 ic(format_file_name(filename))
 
-func = "longestPalindrome"
+func = "largestPathValue"
 ic(camel_to_snake_case(func))
