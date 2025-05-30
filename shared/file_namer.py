@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Largest Color Value in a Directed Graph"
+filename = "Find Closest Node to Given Two Nodes"
 ic(format_file_name(filename))
 
-func = "largestPathValue"
+func = "closestMeetingNode"
 ic(camel_to_snake_case(func))
