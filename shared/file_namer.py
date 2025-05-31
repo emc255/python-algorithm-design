@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find Closest Node to Given Two Nodes"
+filename = "Snakes and Ladders"
 ic(format_file_name(filename))
 
-func = "closestMeetingNode"
+func = "snakesAndLadders"
 ic(camel_to_snake_case(func))
