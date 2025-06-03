@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Snakes and Ladders"
+filename = "Maximum Candies You Can Get from Boxes"
 ic(format_file_name(filename))
 
-func = "snakesAndLadders"
+func = "maxCandies"
 ic(camel_to_snake_case(func))
