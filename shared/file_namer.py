@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Candies You Can Get from Boxes"
+filename = "Find the Lexicographically Largest String From the Box I"
 ic(format_file_name(filename))
 
-func = "maxCandies"
+func = "answerString"
 ic(camel_to_snake_case(func))
