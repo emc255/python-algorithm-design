@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Lexicographically Smallest Equivalent String"
+filename = "Maximum Difference Between Even and Odd Frequency II"
 ic(format_file_name(filename))
 
-func = "smallestEquivalentString"
+func = "maxDifference"
 ic(camel_to_snake_case(func))
