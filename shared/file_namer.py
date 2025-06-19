@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Difference Between Even and Odd Frequency II"
+filename = "Partition Array Such That Maximum Difference Is K"
 ic(format_file_name(filename))
 
-func = "maxDifference"
+func = "partitionArray"
 ic(camel_to_snake_case(func))
