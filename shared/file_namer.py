@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Partition Array Such That Maximum Difference Is K"
+filename = "Sum of k-Mirror Numbers"
 ic(format_file_name(filename))
 
-func = "partitionArray"
+func = "kMirror"
 ic(camel_to_snake_case(func))
