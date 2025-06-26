@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Kth Smallest Product of Two Sorted Arrays"
+filename = "Longest Binary Subsequence Less Than or Equal to K"
 ic(format_file_name(filename))
 
-func = "kthSmallestProduct"
+func = "longestSubsequence"
 ic(camel_to_snake_case(func))
