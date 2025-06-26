@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Sum of k-Mirror Numbers"
+filename = "Kth Smallest Product of Two Sorted Arrays"
 ic(format_file_name(filename))
 
-func = "kMirror"
+func = "kthSmallestProduct"
 ic(camel_to_snake_case(func))
