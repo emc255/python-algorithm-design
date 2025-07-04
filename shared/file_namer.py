@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Evaluate Reverse Polish Notation"
+filename = "Find the K-th Character in String Game II"
 ic(format_file_name(filename))
 
-func = "evalRPN"
+func = "kthCharacter"
 ic(camel_to_snake_case(func))
