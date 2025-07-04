@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Find the K-th Character in String Game II"
+filename = "Elimination Game"
 ic(format_file_name(filename))
 
-func = "kthCharacter"
+func = "lastRemaining"
 ic(camel_to_snake_case(func))
