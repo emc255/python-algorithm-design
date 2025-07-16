@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Number of Events That Can Be Attended II"
+filename = "Find the Maximum Length of Valid Subsequence I"
 ic(format_file_name(filename))
 
-func = "maxValue"
+func = "maximumLength"
 ic(camel_to_snake_case(func))
