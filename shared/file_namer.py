@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Unique Binary Search Trees II"
+filename = "Unique Binary Search Trees"
 ic(format_file_name(filename))
 
-func = "generateTrees"
+func = "numTrees"
 ic(camel_to_snake_case(func))
