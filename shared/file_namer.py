@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Unique Binary Search Trees"
+filename = "Maximum Erasure Value"
 ic(format_file_name(filename))
 
-func = "numTrees"
+func = "maximumUniqueSubarray"
 ic(camel_to_snake_case(func))
