@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Maximum Erasure Value"
+filename = "Fruit Into Baskets"
 ic(format_file_name(filename))
 
-func = "maximumUniqueSubarray"
+func = "totalFruit"
 ic(camel_to_snake_case(func))
