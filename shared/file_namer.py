@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Fruit Into Baskets"
+filename = "Ways to Express an Integer as Sum of Powers"
 ic(format_file_name(filename))
 
-func = "totalFruit"
+func = "numberOfWays"
 ic(camel_to_snake_case(func))
