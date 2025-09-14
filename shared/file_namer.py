@@ -17,8 +17,8 @@ def camel_to_snake_case(s: str) -> str:
     return ''.join(new_name)
 
 
-filename = "Longest Consecutive Sequence"
+filename = "Vowel Spellchecker"
 ic(format_file_name(filename))
 
-func = "longestConsecutive"
+func = "spellchecker"
 ic(camel_to_snake_case(func))
